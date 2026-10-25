@@ -77,23 +77,18 @@ body {
 
 .hero {
 
-    min-height: 650px;
+    display: grid;
 
-    display: flex;
+    grid-template-columns: 1fr 350px;
 
     align-items: center;
 
-    justify-content: space-between;
-
     gap: 40px;
 
-    padding: 60px 80px;
+    padding: 80px;
 
-    position: relative;
-
-    z-index: 1;
+    min-height: 650px;
 }
-
 .hero-content {
     max-width: 900px;
 }
