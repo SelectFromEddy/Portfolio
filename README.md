@@ -151,7 +151,7 @@ https://linkedin.com/in/YOURPROFILE
 LinkedIn
 </a>
 
-your@email.com
+greencitycypha@gmail.com
 Email
 </a>
 
