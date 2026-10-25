@@ -163,13 +163,19 @@ body {
 ========================= */
 
 .stats {
-    padding: 0 8% 100px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px 100px 20px;
 
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 25px;
 }
-
 .stat-card {
     background: #111827;
 
