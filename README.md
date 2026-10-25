@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduardo Santiago | Data Analyst</title>
+styles.css
+</head>
 
+<body>
+
+<nav>
+  <div class="logo">Eduardo Santiago</div>
+
+  <ul>
+    <li>#aboutAbout</a></li>
+    <li>#skillsSkills</a></li>
+    <li>#projectsProjects</a></li>
+    <li>#contactContact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Transforming Data Into Business Decisions</h1>
+
+    <p>
+      Data Analyst skilled in SQL, Python,
+      Power BI, Tableau, Excel, Power Query,
+      Power Pivot and DAX.
+    </p>
+
+    <div class="buttons">
+      #projectsView Projects</a>
+      assets/resume.pdfResume</a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="stats">
+
+  <div class="stat">
+    <h2>4</h2>
+    <p>Analytics Projects</p>
+  </div>
+
+  <div class="stat">
+    <h2>4</h2>
+    <p>Industries Analyzed</p>
+  </div>
+
+  <div class="stat">
+    <h2>10+</h2>
+    <p>Technical Skills</p>
+  </div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Data Analyst focused on transforming
+complex datasets into clear business insights.
+My experience includes marketing analytics,
+public health risk analysis, employment trends,
+and small business lending.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills & Technologies</h2>
+
+<div class="skills-grid">
+
+<span>SQL</span>
+<span>Python</span>
+<span>Power BI</span>
+<span>Tableau</span>
+<span>Excel</span>
+<span>Power Query</span>
+<span>Power Pivot</span>
+<span>DAX</span>
+<span>PostgreSQL</span>
+<span>Data Modeling</span>
+<span>ETL</span>
+<span>Dashboard Development</span>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<h3>Marketing Campaign Analysis</h3>
+<p>
+Analyzed multi-channel marketing performance and
+generated business recommendations using SQL and Power BI.
+</p>
+</div>
+
+<div class="card">
+<h3>FDA Recall Risk Analysis</h3>
+<p>
+Risk severity trends and contamination analysis using
+SQL and Tableau.
+</p>
+</div>
+
+<div class="card">
+<h3>Employment Trends Analysis</h3>
+<p>
+Industry growth and workforce trend analysis using
+SQL Server and Tableau.
+</p>
+</div>
+
+<div class="card">
+<h3>SBA Lending Analysis</h3>
+<p>
+Small business lending and risk analysis with
+Excel, Power Query, Power Pivot and DAX.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Let's Connect</h2>
+
+<div class="contact-links">
+
+https://github.com/YOURUSERNAMEGitHub</a>
+
+https://linkedin.com/in/YOURPROFILE
+LinkedIn
+</a>
+
+your@email.com
+Email
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Eduardo Santiago</p>
+</footer>
+
+script.jsscript>
+
+</body>
+</html>
