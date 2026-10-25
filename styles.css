@@ -550,24 +550,24 @@ footer {
 
     position: absolute;
 
-    width: 390px;
-    height: 260px;
+    width: 250px;
+    height: 170px;
 
     background: var(--accent);
 
     left: 50%;
-    bottom: 95px;
+    bottom: 65px;
 
     transform: translateX(-50%);
 
     border-radius:
-        180px 180px
-        60px 60px;
+        130px 130px
+        40px 40px;
 
     z-index: 1;
 
     box-shadow:
-        0 0 100px rgba(34,197,94,.35);
+        0 0 60px rgba(34,197,94,.25);
 }
 
 .profile-background::before {
