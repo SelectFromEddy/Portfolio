@@ -76,14 +76,22 @@ body {
 ========================= */
 
 .hero {
-    min-height: 90vh;
+
+    min-height: 650px;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
 
-    text-align: center;
-    padding: 120px 10%;
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 60px 80px;
+
+    position: relative;
+
+    z-index: 1;
 }
 
 .hero-content {
