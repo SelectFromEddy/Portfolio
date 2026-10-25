@@ -83,11 +83,11 @@ body {
 
     align-items: center;
 
-    gap: 40px;
-
-    padding: 80px;
+    gap: 30px;
 
     min-height: 650px;
+
+    padding: 60px;
 }
 .hero-content {
     max-width: 900px;
