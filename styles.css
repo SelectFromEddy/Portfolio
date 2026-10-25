@@ -381,9 +381,9 @@ footer {
 
 .hero-wrapper {
 
-    max-width: 1400px;
+    max-width: 1200px;
 
-    margin: 40px auto;
+    margin: 40px auto 80px auto;
 
     background: var(--surface);
 
