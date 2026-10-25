@@ -350,6 +350,301 @@ footer {
         font-size: 2.2rem;
     }
 }
+/* ===============================
+   GREEN COLOR SYSTEM
+================================== */
+
+:root {
+
+    --background: #050505;
+    --surface: #0d0d0d;
+
+    --text: #ffffff;
+    --text-muted: #a1a1aa;
+
+    --accent: #22c55e;
+    --accent-hover: #16a34a;
+
+}
+
+/* ===============================
+   HERO CARD CONTAINER
+================================== */
+
+.hero-wrapper {
+
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    background: var(--surface);
+
+    border-radius: 30px;
+
+    border: 1px solid #1b1b1b;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.hero-wrapper::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: -150px;
+    top: -150px;
+
+    background: rgba(34,197,94,.10);
+
+    filter: blur(130px);
+
+    z-index: 0;
+}
+
+/* ===============================
+   HERO LAYOUT
+================================== */
+
+.hero {
+
+    min-height: 700px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+
+    padding: 80px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* ===============================
+   HERO TEXT
+================================== */
+
+.hero-content {
+
+    max-width: 650px;
+
+    flex: 1;
+}
+
+.hero-tag {
+
+    color: var(--accent);
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.hero h1 {
+
+    font-size: 5rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.accent {
+
+    color: var(--accent);
+}
+
+.hero-description {
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+    font-size: 1.1rem;
+}
+
+/* ===============================
+   BUTTONS
+================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+
+    background: var(--accent);
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 999px;
+
+    transition: .3s;
+}
+
+.btn-primary:hover {
+
+    background: var(--accent-hover);
+}
+
+.btn-secondary {
+
+    border: 1px solid #2c2c2c;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 999px;
+
+    transition: .3s;
+}
+
+.btn-secondary:hover {
+
+    border-color: var(--accent);
+}
+
+/* ===============================
+   PROFILE SECTION
+================================== */
+
+.hero-image {
+
+    position: relative;
+
+    width: 500px;
+    height: 600px;
+}
+
+/* GREEN SHAPE */
+
+.profile-background {
+
+    position: absolute;
+
+    width: 390px;
+    height: 260px;
+
+    background: var(--accent);
+
+    left: 50%;
+    bottom: 95px;
+
+    transform: translateX(-50%);
+
+    border-radius:
+        180px 180px
+        60px 60px;
+
+    z-index: 1;
+
+    box-shadow:
+        0 0 100px rgba(34,197,94,.35);
+}
+
+.profile-background::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 310px;
+
+    top: -25px;
+    left: -20px;
+
+    background: rgba(34,197,94,.16);
+
+    border-radius:
+        220px 220px
+        80px 80px;
+
+    filter: blur(40px);
+
+    z-index: -1;
+}
+
+/* PROFILE IMAGE */
+
+.profile-image {
+
+    position: absolute;
+
+    width: 110%;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+
+    filter:
+        drop-shadow(0 0 2px white)
+        drop-shadow(0 0 8px rgba(255,255,255,.3));
+
+    animation: float 6s ease-in-out infinite;
+}
+
+/* ===============================
+   FLOAT ANIMATION
+================================== */
+
+@keyframes float {
+
+    0% {
+
+        transform:
+        translateX(-50%)
+        translateY(0px);
+
+    }
+
+    50% {
+
+        transform:
+        translateX(-50%)
+        translateY(-10px);
+
+    }
+
+    100% {
+
+        transform:
+        translateX(-50%)
+        translateY(0px);
+
+    }
+
+
+
+
 
 /* Animation */
 
