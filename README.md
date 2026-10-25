@@ -13,7 +13,7 @@ styles.css
   <div class="logo">Eduardo Santiago</div>
 
   <ul>
-    <li>#aboutAbout</a></li>
+    <li><a href="about.html">About Me</a></li>
     <li>#skillsSkills</a></li>
     <li>#projectsProjects</a></li>
     <li>#contactContact</a></li>
