@@ -537,10 +537,13 @@ footer {
 
     position: relative;
 
-    width: 500px;
-    height: 600px;
-}
+    width: 340px;
+    height: 420px;
 
+    flex-shrink: 0;
+
+    transform: translateY(40px);
+}
 /* GREEN SHAPE */
 
 .profile-background {
