@@ -202,8 +202,14 @@ body {
 ========================= */
 
 .section {
-    padding: 100px 8%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 100px 20px;
 }
+
 
 .section h2 {
     text-align: center;
