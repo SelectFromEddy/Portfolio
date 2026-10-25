@@ -1,3 +1,4 @@
+
 /* =========================
    RESET
 ========================= */
@@ -79,16 +80,17 @@ body {
 
     display: grid;
 
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr 420px;
 
     align-items: center;
 
-    gap: 30px;
+    gap: 40px;
+
+    padding: 80px;
 
     min-height: 650px;
-
-    padding: 60px;
 }
+
 .hero-content {
     max-width: 500px;
 }
