@@ -325,3 +325,117 @@ body {
     }
 
 }
+/* PROJECTS PAGE */
+
+.projects-hero {
+
+    text-alig*: center;
+
+    max-width: 900px;
+
+*   margin: 100px auto 70px;
+}
+
+.pr*jects-hero h1 {
+
+    font-size: 4r*m;
+
+    margin: 20px 0;
+}
+
+.projec*s-hero p {
+
+    color: #9ca3af;
+
+ *  line-height: 1.8;
+}
+
+.projects-g*id-page {
+
+    max-width: 1300px;
+*    margin: 0 auto 80px;
+
+    disp*ay: grid;
+
+    grid-template-colum*s:
+        repeat(auto-fit, minmax*320px, 1fr));
+
+    gap: 30px;
+
+   *padding: 20px;
+}
+
+.portfolio-card *
+
+    position: relative;
+
+    bac*ground: #0e0e0e;
+
+    border: 1px *olid #1f1f1f;
+
+    border-radius: *4px;
+
+    padding: 35px;
+
+    text*decoration: none;
+
+    overflow: h*dden;
+
+    transition: 0.35s ease;*
+    color: white;
+}
+
+.portfolio-c*rd:hover {
+
+    transform: transla*eY(-8px);
+
+    border-color: #76e3*a;
+}
+
+.card-glow {
+
+    position: *bsolute;
+
+    width: 220px;
+
+    h*ight: 220px;
+
+    top: -120px;
+
+  * right: -120px;
+
+    background: r*ba(118,227,106,.12);
+
+    filter: *lur(50px);
+}
+
+.portfolio-card h2 {*
+    margin-bottom: 12px;
+}
+
+.stac* {
+
+    display: inline-block;
+
+  * margin-bottom: 20px;
+
+    color: *76e36a;
+
+    font-weight: 600;
+}
+
+*portfolio-card p {
+
+    color: #9c*3af;
+
+    line-height: 1.7;
+
+    m*rgin-bottom: 30px;
+}
+
+.view-projec* {
+
+    color: #76e36a;
+
+    font-*eight: 700;
+}
