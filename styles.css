@@ -468,7 +468,12 @@ body {
     line-height: 1.8;
 
     margin-bottom: 20px;
+
+    overflow-wrap: break-word;
+
+    word-break: break-word;
 }
+
 
 .project-description {
 
