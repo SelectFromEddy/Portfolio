@@ -171,28 +171,19 @@ body {
     margin: 0 auto;
 }
 
-.profile-shape {
+.profile-image {
 
     position: absolute;
 
-    width: 300px;
-    height: 220px;
-
-    background: #22c55e;
+    width: 320px;
 
     left: 50%;
-    bottom: 20px;
+
+    bottom: 0;
 
     transform: translateX(-50%);
 
-    border-radius:
-        150px 150px
-        60px 60px;
-
-    z-index: 2;
-
-    box-shadow:
-        0 0 60px rgba(34,197,94,.35);
+    z-index: 1;
 }
 .profile-image {
 
