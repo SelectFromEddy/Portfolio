@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Projects | SELECT FROM eddy;</title>
 
     <link rel="stylesheet" href="styles.css">
@@ -12,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,115 +31,100 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
 
     </nav>
 
-    <section class="projects-hero">
+    <section class="sql-hero">
 
         <p class="hero-tag">
-            PORTFOLIO
+            PORTFOLIO DATABASE
         </p>
 
         <h1>
-            Analytics Projects
+
+            <span class="sql-blue">SELECT</span>
+            <span class="sql-white">*</span>
+
+            <br>
+
+            <span class="sql-blue">FROM</span>
+
+            <span class="sql-green">
+                analytics_projects;
+            </span>
+
         </h1>
 
-        <p>
-            Real-world analytics projects built using SQL,
-            Tableau, Power BI, Excel, DAX and Business Intelligence methodologies.
+        <p class="hero-subtitle">
+
+            A collection of analytics projects built with SQL,
+            Power BI, Tableau, Excel, DAX and Business Intelligence methodologies.
+
         </p>
 
     </section>
 
     <section class="projects-grid-page">
 
-        <a href="projects/marketing.html" class="portfolio-card">
+        <!-- MARKETING -->
 
-            <div class="card-glow"></div>
+        <a href="https://github.com/SelectFromEddy"
+            target="_blank"
+            class="portfolio-card">
 
-            <h2>Marketing Performance Analysis</h2>
+            <img src="assets/marketing-preview.png"
+                alt="Marketing Analytics Dashboard"
+                class="project-image">
 
-            <span class="stack">
-                SQL • PostgreSQL • Power BI
-            </span>
+            <div class="sql-query">
 
-            <p>
-                Multi-channel marketing analysis focused on ad spend,
-                conversions, profitability, and ROAS optimization.
+                <span class="sql-blue">SELECT</span>
+                <span class="sql-white">*</span>
+
+                <br>
+
+                <span class="sql-blue">FROM</span>
+
+                <span class="sql-green">
+                    marketing_performance;
+                </span>
+
+            </div>
+
+            <p class="project-description">
+
+                Marketing campaign analysis focused on profitability,
+                conversion trends, customer acquisition efficiency, and ROAS.
+
             </p>
 
-            <span class="view-project">
-                View Case Study →
+            <span class="query-button">
+
+                Execute Query →
+
             </span>
 
         </a>
 
-        <a href="projects/fda.html" class="portfolio-card">
+        <!-- FDA -->
 
-            <div class="card-glow"></div>
+        <a href="https://github.com/SelectFromEddy"
+            target="_blank"
+            class="portfolio-card">
 
-            <h2>FDA Recall Risk Analysis</h2>
+            <img src="assets/fda-preview.png"
+                alt="FDA Dashboard"
+                class="project-image">
 
-            <span class="stack">
-                SQL • Tableau • Excel
-            </span>
+            <div class="sql-query">
 
-            <p>
-                Investigation of recall severity, contamination patterns,
-                and public health risk trends.
-            </p>
+                <span class="sql-blue">SELECT</span>
+                <span class="sql-white">*</span>
 
-            <span class="view-project">
-                View Case Study →
-            </span>
+                <br>
 
-        </a>
+                <span class="sql-blue">FROM</span>
 
-        <a href="projects/employment.html" class="portfolio-card">
-
-            <div class="card-glow"></div>
-
-            <h2>Employment Trends Analysis</h2>
-
-            <span class="stack">
-                SQL Server • Tableau
-            </span>
-
-            <p>
-                Workforce growth, labor concentration,
-                and industry-level employment analysis.
-            </p>
-
-            <span class="view-project">
-                View Case Study →
-            </span>
-
-        </a>
-
-        <a href="projects/sba.html" class="portfolio-card">
-
-            <div class="card-glow"></div>
-
-            <h2>SBA Lending Analysis</h2>
-
-            <span class="stack">
-                Excel • Power Query • DAX
-            </span>
-
-            <p>
-                Small business lending performance,
-                risk monitoring and funding analysis.
-            </p>
-
-            <span class="view-project">
-                View Case Study →
-            </span>
-
-        </a>
-
-    </section>
-
-</body>
-
-</html>
+               
