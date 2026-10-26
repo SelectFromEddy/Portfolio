@@ -354,6 +354,8 @@ body {
 
 .projects-grid-page {
 
+    width: 100%;
+
     max-width: 1200px;
 
     margin: 80px auto;
@@ -366,12 +368,15 @@ body {
 
     align-items: center;
 
+    justify-content: center;
+
     gap: 35px;
 }
 
+
 .portfolio-card {
 
-    width: 100%;
+    width: 90%;
 
     max-width: 900px;
 
@@ -390,7 +395,10 @@ body {
     color: white;
 
     transition: 0.35s ease;
+
+    display: block;
 }
+
 
 
 .portfolio-card:hover {
