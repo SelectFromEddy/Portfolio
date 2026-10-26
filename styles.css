@@ -780,9 +780,9 @@ body {
 
     margin: 0;
 }
-/* ANALYTICS PROCESS */
+/* ANALYTICS WORKFLOW */
 
-.process-timeline {
+.workflow-grid {
 
     max-width: 1200px;
 
@@ -791,14 +791,12 @@ body {
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
+        repeat(auto-fit, minmax(250px, 1fr));
 
     gap: 25px;
 }
 
-.process-step {
-
-    position: relative;
+.workflow-card {
 
     background: #0e0e0e;
 
@@ -806,14 +804,14 @@ body {
 
     border-radius: 24px;
 
-    padding: 30px;
+    padding: 35px;
 
     text-align: center;
 
-    transition: .3s ease;
+    transition: all 0.3s ease;
 }
 
-.process-step:hover {
+.workflow-card:hover {
 
     transform: translateY(-8px);
 
@@ -823,7 +821,9 @@ body {
         0 0 25px rgba(118,227,106,.12);
 }
 
-.process-number {
+.workflow-number {
+
+    display: block;
 
     color: #76e36a;
 
@@ -834,19 +834,22 @@ body {
     margin-bottom: 15px;
 }
 
-.process-step h3 {
+.workflow-card h3 {
 
     margin-bottom: 15px;
 
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
-.process-step p {
+.workflow-card p {
 
     color: #9ca3af;
 
-    line-height: 1.7;
+    line-height: 1.8;
+
+    margin: 0;
 }
+
 
 
 
