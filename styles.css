@@ -710,7 +710,7 @@ body {
 
     font-weight: 700;
 
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .stack-card:hover {
@@ -722,5 +722,6 @@ body {
     box-shadow:
         0 0 20px rgba(118,227,106,.12);
 }
+
 
 
