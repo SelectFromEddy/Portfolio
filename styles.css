@@ -325,29 +325,31 @@ body {
     }
 
 }
-/* PROJECTS PAGE */
+/* ==========================
+   PROJECTS PAGE
+========================== */
 
 .projects-hero {
 
-    text-alig*: center;
+    text-align: center;
 
     max-width: 900px;
 
-*   margin: 100px auto 70px;
+    margin: 100px auto 70px;
 }
 
-.pr*jects-hero h1 {
+.projects-hero h1 {
 
-    font-size: 4r*m;
+    font-size: 4rem;
 
     margin: 20px 0;
 }
 
-.projec*s-hero p {
+.projects-hero p {
 
     color: #9ca3af;
 
- *  line-height: 1.8;
+    line-height: 1.8;
 }
 
 .projects-grid-page {
@@ -385,70 +387,70 @@ body {
 
     color: white;
 
-    transition: .35s ease;
+    transition: 0.35s ease;
 }
 
-.portfolio-c*rd:hover {
+.portfolio-card:hover {
 
-    transform: transla*eY(-8px);
+    transform: translateY(-8px);
 
-    border-color: #76e3*a;
+    border-color: #76e36a;
+
+    box-shadow:
+        0 0 30px rgba(118,227,106,.15);
 }
 
 .card-glow {
 
-    position: *bsolute;
+    position: absolute;
 
     width: 220px;
 
-    h*ight: 220px;
+    height: 220px;
 
     top: -120px;
 
-  * right: -120px;
+    right: -120px;
 
-    background: r*ba(118,227,106,.12);
+    background: rgba(118,227,106,.12);
 
-    filter: *lur(50px);
+    filter: blur(50px);
 }
 
-.portfolio-card h2 {*
+.portfolio-card h2 {
+
     margin-bottom: 12px;
 }
 
-.stac* {
+.stack {
 
     display: inline-block;
 
-  * margin-bottom: 20px;
+    margin-bottom: 20px;
 
-    color: *76e36a;
+    color: #76e36a;
 
     font-weight: 600;
 }
 
-*portfolio-card p {
+.portfolio-card p {
 
-    color: #9c*3af;
+    color: #9ca3af;
 
     line-height: 1.7;
 
-    m*rgin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.view-projec* {
-
-    color: #76e36a;
-
-    font-*eight: 700;
-}
-/* SQL QUERY STYLE */
+/* ==========================
+   SQL PROJECT CARDS
+========================== */
 
 .sql-query {
 
     text-align: center;
 
-    font-family: Consolas, monospace;
+    font-family: Consolas, Monaco, monospace;
 
     font-size: 1.7rem;
 
@@ -477,4 +479,11 @@ body {
     color: #76e36a;
 
     font-weight: 700;
+
+    font-size: 1.05rem;
+}
+
+.query-button:hover {
+
+    color: #39c5ff;
 }
