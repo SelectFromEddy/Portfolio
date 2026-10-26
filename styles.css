@@ -390,17 +390,15 @@ footer {
 
     max-width: 1200px;
 
-    margin: 40px auto 80px auto;
+    margin: 40px auto;
 
-    background: var(--surface);
+    background: #080808;
 
-    border-radius: 30px;
+    border: 1px solid #1f1f1f;
 
-    border: 1px solid #1b1b1b;
+    border-radius: 24px;
 
     overflow: hidden;
-
-    position: relative;
 }
 
 .hero-wrapper::before {
