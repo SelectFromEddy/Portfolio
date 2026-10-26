@@ -50,6 +50,20 @@ body {
 
     cursor: pointer;
 }
+.sql-blue {
+
+    color: #39c5ff;
+}
+
+.sql-green {
+
+    color: #76e36a;
+}
+
+.sql-white {
+
+    color: #f5f5f5;
+}
 .nav-links {
 
     list-style: none;
