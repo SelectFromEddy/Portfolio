@@ -653,4 +653,74 @@ body {
         font-size: 2.5rem;
     }
 }
+/* ANALYTICS STACK */
+
+.home-section {
+
+    max-width: 1200px;
+
+    margin: 100px auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+.section-title {
+
+    color: #76e36a;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 15px;
+}
+
+.section-description {
+
+    color: #9ca3af;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    line-height: 1.8;
+}
+
+.stack-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.stack-card {
+
+    background: #0e0e0e;
+
+    border: 1px solid #1f1f1f;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.stack-card:hover {
+
+    border-color: #76e36a;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(118,227,106,.12);
+}
+
 
