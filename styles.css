@@ -49,6 +49,12 @@ body {
     letter-spacing: 1px;
 
     cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-flex;
+
+    gap: 6px;
 }
 .sql-blue {
 
