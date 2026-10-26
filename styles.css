@@ -169,27 +169,33 @@ body {
     height: 520px;
 
     margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 }
 
 .profile-shape {
 
     position: absolute;
 
-    width: 340px;
+    width: 360px;
 
-    height: 340px;
+    height: 360px;
 
     background: #22c55e;
 
+    border-radius: 50%;
+
     left: 50%;
 
-    bottom: 10px;
+    bottom: 60px;
 
     transform: translateX(-50%);
 
-    border-radius: 50%;
-
-    z-index: 2;
+    z-index: 1;
 
     box-shadow:
         0 0 80px rgba(34,197,94,.35);
@@ -203,14 +209,30 @@ body {
 
     left: 50%;
 
-    bottom: 0;
+    bottom: 15px;
 
     transform: translateX(-50%);
 
-    z-index: 3;
+    z-index: 2;
+}
+.profile-shape::after {
 
-    filter:
-        drop-shadow(0 0 4px rgba(255,255,255,.35));
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+
+    height: 180px;
+
+    background: #22c55e;
+
+    border-radius: 0 0 180px 180px;
+
+    z-index: 5;
 }
 /* STATS */
 
