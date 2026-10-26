@@ -463,16 +463,17 @@ body {
 
     font-family: Consolas, Monaco, monospace;
 
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 
     line-height: 1.8;
 
     margin-bottom: 20px;
 
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 
     word-break: break-word;
 }
+
 
 
 .project-description {
