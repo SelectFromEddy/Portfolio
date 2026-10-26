@@ -375,6 +375,8 @@ body {
 
     max-width: 900px;
 
+    margin: 0 auto;
+
     background: #0e0e0e;
 
     border: 1px solid #1f1f1f;
@@ -389,6 +391,7 @@ body {
 
     transition: 0.35s ease;
 }
+
 
 .portfolio-card:hover {
 
