@@ -722,6 +722,59 @@ body {
     box-shadow:
         0 0 20px rgba(118,227,106,.12);
 }
+/* TECHNICAL SKILLS */
+
+.skills-grid-home {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.skills-card {
+
+    background: #0e0e0e;
+
+    border: 1px solid #1f1f1f;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: left;
+
+    transition: .3s ease;
+}
+
+.skills-card:hover {
+
+    border-color: #76e36a;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(118,227,106,.12);
+}
+
+.skills-card h3 {
+
+    color: #76e36a;
+
+    margin-bottom: 15px;
+
+    font-size: 1.3rem;
+}
+
+.skills-card p {
+
+    color: #9ca3af;
+
+    line-height: 1.8;
+}
+
 
 
 
