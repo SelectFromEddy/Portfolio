@@ -616,22 +616,19 @@ footer {
 
     position: absolute;
 
-    width: 72%;
+    width: 320px;
 
     left: 50%;
+
     bottom: 0;
 
     transform: translateX(-50%);
 
-    z-index: 3;
+    z-index: 5;
 
     filter:
-        drop-shadow(0 0 2px white)
-        drop-shadow(0 0 6px rgba(255,255,255,.25));
-
-    animation: float 6s ease-in-out infinite;
+        drop-shadow(0 0 3px rgba(255,255,255,.4));
 }
-
 /* ===============================
    FLOAT ANIMATION
 ================================== */
