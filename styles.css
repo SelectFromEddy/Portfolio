@@ -163,7 +163,19 @@ body {
     display: flex;
 
     gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
 }
+
+.hero-buttons a {
+
+    width: 220px;
+
+    text-align: center;
+}
+
 
 .primary-btn {
 
