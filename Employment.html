@@ -35,84 +35,146 @@
         </h1>
 
         <p class="project-subtitle">
-            SQL Server • Tableau • Excel • ETL • Data Modeling
+            SQL Server • Tableau • ETL • Data Modeling • Workforce Analytics
         </p>
 
-        <!-- EXECUTIVE SUMMARY -->
+        assets/employment-dashboard.png
 
         <section class="project-section">
 
             <h2>Executive Summary</h2>
 
             <p>
-                PASTE ENTIRE EXECUTIVE SUMMARY HERE
+                Understanding labor market trends is essential for workforce planning,
+                economic forecasting, and strategic decision-making. This project
+                analyzed benchmark-revised employment data from the U.S. Bureau of
+                Labor Statistics (BLS) to uncover employment concentration, industry
+                growth patterns, workforce stability, and seasonal hiring trends
+                across major sectors of the U.S. economy. The final deliverable
+                was an interactive Tableau dashboard designed to transform labor
+                market data into actionable business insights.
             </p>
 
         </section>
 
-        <!-- BUSINESS PROBLEM -->
+        <section class="metrics-grid">
+
+            <div class="metric-card">
+                <h3>21%</h3>
+                <p>Healthcare Employment Share</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>3.5%</h3>
+                <p>Healthcare Growth</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>41%</h3>
+                <p>Employment Concentration</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>-2.1%</h3>
+                <p>Information Industry Decline</p>
+            </div>
+
+        </section>
 
         <section class="project-section">
 
             <h2>Business Problem</h2>
 
             <p>
-                PASTE ENTIRE BUSINESS PROBLEM HERE
+                Organizations, economists, and workforce planners rely on labor
+                market data to understand economic conditions, workforce demand,
+                and industry performance. The objective was to identify which
+                industries employ the most workers, which sectors are growing or
+                declining, how concentrated employment is across industries, and
+                which industries demonstrate strong seasonal hiring behavior.
             </p>
 
         </section>
-
-        <!-- MY ROLE -->
 
         <section class="project-section">
 
             <h2>My Role</h2>
 
-            PASTE MY ROLE SECTION HERE
+            <ul>
+
+                <li>Data acquisition and validation</li>
+                <li>ETL development</li>
+                <li>SQL database design</li>
+                <li>Data cleaning and transformation</li>
+                <li>Data modeling</li>
+                <li>Dashboard development</li>
+                <li>Business insight generation</li>
+                <li>Documentation and reporting</li>
+
+            </ul>
 
         </section>
-
-        <!-- PROJECT SCOPE -->
 
         <section class="project-section">
 
             <h2>Project Scope</h2>
 
-            PASTE PROJECT SCOPE SECTION HERE
+            <ul>
+
+                <li>Dataset: Benchmark-Revised BLS Employment Data</li>
+                <li>Time Period: 2024–2025</li>
+                <li>Granularity: Monthly Employment Counts by Industry</li>
+
+            </ul>
 
         </section>
-
-        <!-- DASHBOARD -->
-
-        <section class="project-section">
-
-            <h2>Dashboard Preview</h2>
-
-            assets/employment-dashboard.png
-
-        </section>
-
-        <!-- TOOLS -->
 
         <section class="project-section">
 
             <h2>Tools & Technologies</h2>
 
-            PASTE FULL TOOLS SECTION HERE
+            <div class="tool-grid">
+
+                <div class="tool">SQL Server</div>
+                <div class="tool">SQL</div>
+                <div class="tool">Excel</div>
+                <div class="tool">Tableau</div>
+                <div class="tool">ETL</div>
+                <div class="tool">Star Schema</div>
+                <div class="tool">CTEs</div>
+                <div class="tool">Window Functions</div>
+
+            </div>
 
         </section>
-
-        <!-- ETL -->
 
         <section class="project-section">
 
             <h2>ETL Process</h2>
 
-            PASTE FULL ETL SECTION HERE
+            <h3>Extract</h3>
+
+            <p>
+                Retrieved benchmark-revised employment data and imported raw
+                records into a SQL staging environment.
+            </p>
+
+            <h3>Transform</h3>
+
+            <p>
+                Removed duplicates, standardized industry names, handled missing
+                values, created date dimensions, calculated growth metrics,
+                generated rankings, and performed volatility analysis.
+            </p>
+
+            <h3>Load</h3>
+
+            <p>
+                Loaded transformed data into SQL Server and connected Tableau to
+                create an interactive reporting layer.
+            </p>
 
         </section>
-
-        <!-- DATA MODEL -->
 
         <section class="project-section">
 
@@ -120,11 +182,13 @@
 
             assets/employment-data-model.png
 
-            PASTE DATA MODEL DESCRIPTION HERE
+            <p>
+                Implemented a dimensional star schema consisting of a
+                fact_employment table and supporting industry and date dimensions
+                to support reporting and trend analysis.
+            </p>
 
         </section>
-
-        <!-- ANALYTICAL APPROACH -->
 
         <section class="project-section">
 
@@ -132,11 +196,17 @@
 
             assets/employment-sql-analysis.png
 
-            PASTE ANALYTICAL APPROACH HERE
+            <ul>
+
+                <li>Year-over-Year Growth Analysis</li>
+                <li>Moving Average Calculations</li>
+                <li>Industry Rankings</li>
+                <li>Workforce Concentration Analysis</li>
+                <li>Employment Volatility Analysis</li>
+
+            </ul>
 
         </section>
-
-        <!-- KEY FINDINGS -->
 
         <section class="project-section">
 
@@ -144,41 +214,64 @@
 
             assets/employment-findings.png
 
-            PASTE KEY FINDINGS HERE
+            <ul>
+
+                <li>Healthcare represented approximately 21% of employment.</li>
+
+                <li>Healthcare recorded the strongest growth rate at 3.5%.</li>
+
+                <li>More than 41% of employment was concentrated within two industries.</li>
+
+                <li>Information experienced the largest decline at 2.1%.</li>
+
+                <li>Construction, Retail Trade, and Leisure & Hospitality displayed the strongest seasonality.</li>
+
+            </ul>
 
         </section>
-
-        <!-- RECOMMENDATIONS -->
 
         <section class="project-section">
 
             <h2>Recommendations</h2>
 
-            PASTE RECOMMENDATIONS HERE
+            <ul>
+
+                <li>Monitor Healthcare as a leading indicator of labor market expansion.</li>
+
+                <li>Account for seasonality when evaluating workforce trends.</li>
+
+                <li>Investigate declining sectors for structural shifts in workforce demand.</li>
+
+                <li>Expand analysis with unemployment, inflation, and GDP indicators.</li>
+
+            </ul>
 
         </section>
-
-        <!-- BUSINESS VALUE -->
 
         <section class="project-section">
 
             <h2>Business Value</h2>
 
-            PASTE BUSINESS VALUE HERE
+            <p>
+                This project demonstrates how labor market data can be transformed
+                into business intelligence that supports workforce planning,
+                economic analysis, performance monitoring, and strategic
+                decision-making.
+            </p>
 
         </section>
-
-        <!-- CONCLUSION -->
 
         <section class="project-section">
 
             <h2>Conclusion</h2>
 
-            PASTE CONCLUSION HERE
+            <p>
+                This project demonstrates end-to-end analytics capabilities,
+                including ETL development, data modeling, advanced SQL analysis,
+                dashboard development, KPI creation, and business communication.
+            </p>
 
         </section>
-
-        <!-- LINKS -->
 
         <section class="project-section">
 
@@ -194,7 +287,7 @@
 
                 </a>
 
-                <a href="https://public.tableau.com/app/profile/eduardo.santiago3212"
+                <a href="https://public.tableau.com/app/profile/eduardo.santiago3212/viz/Employmentdashboard\_17785513107330/Dashboard"
                    target="_blank"
                    class="secondary-btn">
 
