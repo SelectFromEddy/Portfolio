@@ -188,7 +188,33 @@ body {
     padding: 14px 24px;
 
     border-radius: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 }
+
+.secondary-btn {
+
+    border: 1px solid #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
 
 .secondary-btn {
 
