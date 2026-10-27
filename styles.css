@@ -157,7 +157,6 @@ body {
     font-size: 1.05rem;
 }
 
-
 .hero-buttons {
 
     display: flex;
@@ -171,11 +170,16 @@ body {
 
 .hero-buttons a {
 
-    width: 220px;
+    width: 260px;
 
     text-align: center;
-}
 
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
 
 .primary-btn {
 
@@ -188,12 +192,6 @@ body {
     padding: 14px 24px;
 
     border-radius: 10px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
 }
 
 .secondary-btn {
@@ -207,27 +205,12 @@ body {
     padding: 14px 24px;
 
     border-radius: 10px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
 }
 
 
-.secondary-btn {
 
-    border: 1px solid #333;
 
-    color: white;
 
-    text-decoration: none;
-
-    padding: 14px 24px;
-
-    border-radius: 10px;
-}
 
 /* PROFILE */
 
