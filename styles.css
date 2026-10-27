@@ -1119,6 +1119,60 @@ body {
     font-size: 0.9rem;
 }
 
+/* PROJECT PAGES */
+
+.project-container {
+
+    max-width: 1200px;
+
+    margin: 80px auto;
+
+    padding: 20px;
+}
+
+.project-container h1 {
+
+    font-size: 3.5rem;
+
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+
+    color: #76e36a;
+
+    margin-bottom: 40px;
+}
+
+.project-section {
+
+    margin-bottom: 60px;
+}
+
+.project-section h2 {
+
+    color: #76e36a;
+
+    margin-bottom: 20px;
+}
+
+.project-section p {
+
+    color: #9ca3af;
+
+    line-height: 1.8;
+}
+
+.project-image {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    margin: 30px 0;
+
+    border: 1px solid #1f1f1f;
+}
 
 
 
