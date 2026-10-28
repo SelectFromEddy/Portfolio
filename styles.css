@@ -1382,6 +1382,13 @@ body {
 
     border-radius: 12px;
 }
+.project-section p,
+.project-section li,
+.skills-line {
+
+    color: white !important;
+}
+
 
 
 
