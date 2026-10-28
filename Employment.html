@@ -396,14 +396,152 @@
         <section class="project-section">
 
             <h2>Analytical Approach</h2>
+  <p>
+        Advanced SQL techniques were used to uncover trends and generate business insights.
+    </p>
 
-            <p>
-                Advanced SQL techniques were used to uncover trends and generate business insights.
-            </p> <h2>Key Findings</h2>
+    <h3 class="project-subheading">
+        Window Functions
+    </h3>
 
-            assets/employment-findings.png
+    <p>
+        Used for:
+    </p>
 
+    <ul class="spaced-list">
+
+        <li>
+            Year-over-Year Growth Analysis
+        </li>
+
+        <li>
+            Moving Average Calculations
+        </li>
+
+        <li>
+            Industry Rankings
+        </li>
+
+        <li>
+            Trend Analysis
+        </li>
+
+    </ul>
+
+    <h3 class="project-subheading">
+        Common Table Expressions (CTEs)
+    </h3>
+
+    <p>
+        Used to:
+    </p>
+
+    <ul class="spaced-list">
+
+        <li>
+            Simplify complex calculations
+        </li>
+
+        <li>
+            Organize multi-step analytical workflows
+        </li>
+
+        <li>
+            Improve query readability and maintenance
+        </li>
+
+    </ul>
+
+    <h3 class="project-subheading">
+        Business Metrics Developed
+    </h3>
+
+    <ul class="spaced-list">
+
+        <li>
+            Employment Share
+        </li>
+
+        <li>
+            Year-over-Year Growth
+        </li>
+
+        <li>
+            Month-over-Month Growth
+        </li>
+
+        <li>
+            Industry Rankings
+        </li>
+
+        <li>
+            Employment Volatility
+        </li>
+
+        <li>
+            Workforce Concentration
+        </li>
+
+    </ul>
+
+   <details class="sql-dropdown">
+
+    <summary>Execute Query</summary>
+
+    <pre class="sql-code">
+<span class="sql-keyword">WITH</span> base_data <span class="sql-keyword">AS</span> (
+
+    <span class="sql-keyword">SELECT</span>
+        i.industry_name,
+        d.date,
+        d.month,
+        d.year,
+        f.employment * 1000 <span class="sql-keyword">AS</span> employment
+
+    <span class="sql-keyword">FROM</span> fact_table <span class="sql-keyword">AS</span> f
+
+    <span class="sql-keyword">JOIN</span> dimindustry <span class="sql-keyword">AS</span> i
+        <span class="sql-keyword">ON</span> i.industry_id = f.industry_id
+
+    <span class="sql-keyword">JOIN</span> dimDate <span class="sql-keyword">AS</span> d
+        <span class="sql-keyword">ON</span> d.date_id = f.date_id
+
+),
+
+lagged <span class="sql-keyword">AS</span> (
+
+    <span class="sql-keyword">SELECT</span>
+        industry_name,
+        date,
+        month,
+        year,
+        employment,
+
+        <span class="sql-function">LAG</span>(employment)
+        <span class="sql-keyword">OVER</span>(
+            <span class="sql-keyword">PARTITION BY</span> industry_name
+            <span class="sql-keyword">ORDER BY</span> date
+        ) <span class="sql-keyword">AS</span> prev_month,
+
+        <span class="sql-function">LAG</span>(employment,12)
+        <span class="sql-keyword">OVER</span>(
+            <span class="sql-keyword">PARTITION BY</span> industry_name
+            <span class="sql-keyword">ORDER BY</span> date
+        ) <span class="sql-keyword">AS</span> prev_year
+
+    <span class="sql-keyword">FROM</span> base_data
+
+)
+
+<span class="sql-comment">-- Additional query continues...</span>
+    </pre>
+
+</details>
+
+      
         </section>
+
+
 
         <!-- RECOMMENDATIONS -->
 
