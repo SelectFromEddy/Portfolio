@@ -1165,7 +1165,7 @@ body {
 
 .project-section p {
 
-    color: #9ca3af;
+    color: white;
 
     line-height: 1.8;
 }
@@ -1382,12 +1382,7 @@ body {
 
     border-radius: 12px;
 }
-.project-section p,
-.project-section li,
-.skills-line {
 
-    color: white !important;
-}
 
 
 
