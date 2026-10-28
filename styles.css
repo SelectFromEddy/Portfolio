@@ -1179,13 +1179,12 @@ body {
 
     display: block;
 
-    margin: 30px auto;
+    margin: 30px 0 30px 20px;
 
     border-radius: 20px;
 
     border: 1px solid #1f1f1f;
 }
-
 
 /* ==================================
    PROJECT PAGE RESPONSIVE
