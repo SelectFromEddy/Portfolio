@@ -1310,6 +1310,18 @@ body {
 
     margin-top: 20px;
 }
+.project-links a {
+
+    width: 260px;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
 
 
 
