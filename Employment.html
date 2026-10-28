@@ -420,14 +420,69 @@ market trends.
 
             assets/employment-data-model.png
 
-            <p>
+           <p>
+        To support efficient analysis and reporting, a dimensional star schema was implemented.
+    </p>
 
-                PASTE DATA MODEL DESCRIPTION HERE
+    <h3 class="project-subheading">
+        Fact Table
+    </h3>
 
-            </p>
+    <p>
+        <strong>fact_employment</strong>
+    </p>
 
-        </section>
+    <ul class="spaced-list">
 
+        <li>industry_id</li>
+
+        <li>date_id</li>
+
+        <li>employment</li>
+
+    </ul>
+
+    <h3 class="project-subheading">
+        Dimension Tables
+    </h3>
+
+    <p>
+        <strong>dim_industry</strong>
+    </p>
+
+    <ul class="spaced-list">
+
+        <li>industry_id</li>
+
+        <li>industry_name</li>
+
+    </ul>
+
+    <p>
+        <strong>dim_date</strong>
+    </p>
+
+    <ul class="spaced-list">
+
+        <li>date_id</li>
+
+        <li>date</li>
+
+        <li>month</li>
+
+        <li>year</li>
+
+    </ul>
+
+    <h3 class="project-subheading">
+        Schema Structure
+    </h3>
+
+    <img src="assets/employment-data-model.png"
+         alt="Employment Data Model"
+         class="project-image">
+
+</section>
         <!-- ANALYTICAL APPROACH -->
 
         <section class="project-section">
