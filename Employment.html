@@ -377,9 +377,86 @@ onclick="openLightbox(this.src)">
 
         <section class="project-section">
 
-            <h2>Data Model</h2>
+    <h2>Data Model</h2>
 
-            <img
+    <p>
+        To support efficient analysis and reporting, a dimensional star schema was implemented.
+    </p>
+
+    <br>
+
+    <h3 class="project-subheading">
+        Fact Table
+    </h3>
+
+    <p>
+        <strong>fact_employment</strong>
+    </p>
+
+    <ul class="spaced-list">
+
+        <li>industry_id</li>
+
+        <br>
+
+        <li>date_id</li>
+
+        <br>
+
+        <li>employment</li>
+
+    </ul>
+
+    <br>
+
+    <h3 class="project-subheading">
+        Dimension Tables
+    </h3>
+
+    <p>
+        <strong>dim_industry</strong>
+    </p>
+
+    <ul class="spaced-list">
+
+        <li>industry_id</li>
+
+        <br>
+
+        <li>industry_name</li>
+
+    </ul>
+
+    <br>
+
+    <p>
+        <strong>dim_date</strong>
+    </p>
+
+    <ul class="spaced-list">
+
+        <li>date_id</li>
+
+        <br>
+
+        <li>date</li>
+
+        <br>
+
+        <li>month</li>
+
+        <br>
+
+        <li>year</li>
+
+    </ul>
+
+    <br>
+
+    <h3 class="project-subheading">
+        Schema Structure
+    </h3>
+           <img
 
 src="assets/schemastructure.png"
 
@@ -392,6 +469,8 @@ clickable-image"
 
 
 onclick="openLightbox(this.src)">
+<p> This structure improves query performance while supporting time-series analysis and dashboard reporting.
+    </p>
 
         </section>
 
