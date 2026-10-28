@@ -595,6 +595,12 @@ body {
 
         padding: 20px;
     }
+    .project-image-small {
+
+    width: 90%;
+
+    max-width: none;
+}
 
     .nav-links {
 
