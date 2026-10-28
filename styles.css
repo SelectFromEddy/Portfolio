@@ -1165,16 +1165,6 @@ body {
 
 .project-image {
 
-    width: 100%;
-
-    border-radius: 20px;
-
-    margin: 30px 0;
-
-    border: 1px solid #1f1f1f;
-}
-.project-image-small {
-
     width: 50%;
 
     display: block;
@@ -1185,6 +1175,7 @@ body {
 
     border: 1px solid #1f1f1f;
 }
+
 
 /* ==================================
    PROJECT PAGE RESPONSIVE
