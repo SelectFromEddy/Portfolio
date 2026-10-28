@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        FDA Recall Risk & Severity Analysis (2024–2025)
+    </title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="sql-blue">SELECT</span>
+            <span class="sql-blue">FROM</span>
+            <span class="sql-green">eddy</span>
+            <span class="sql-white">;</span>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section class="project-container">
+
+        <div class="project-hero">
+
+            <h1>
+                FDA Recall Risk &
+                Severity Analysis
+            </h1>
+
+            <p class="project-subtitle">
+                SQL • Tableau • Excel • Risk Analysis
+            </p>
+
+        </div>
+
+        <!-- DASHBOARD -->
+
+        <section class="project-section">
+
+            <h2 class="dashboard-title">
+                Dashboard Preview
+            </h2>
+
+            assets/fda-dashboard.png">
+
+        </section>
+
+        <!-- EXECUTIVE SUMMARY -->
+
+        <section class="project-section">
+
+            <h2>Executive Summary</h2>
+
+            <p>
+                This project analyzes U.S. FDA recall data from 2024–2025 to identify trends in recall frequency, classification severity, and affected product categories.
+            </p>
+
+            <br>
+
+            <p>
+                The analysis reveals that 2025 did not experience more recalls—it experienced more severe recalls, with food products accounting for the highest proportion of high-risk recalls.
+            </p>
+
+            <br>
+
+            <p>
+                These findings help manufacturers and regulators identify high-risk segments and improve preventive monitoring strategies.
+            </p>
+
+        </section>
+
+        <!-- BUSINESS PROBLEM -->
+
+        <section class="project-section">
+
+            <h2>Business Problem</h2>
+
+            <p>
+                How did recall risk and severity change between 2024 and 2025, and where should regulators focus preventive efforts?
+            </p>
+
+        </section>
+
+        <!-- KPIs -->
+
+        <section class="project-section">
+
+            <h2>Key Performance Indicators</h2>
+
+            <div class="metrics-grid">
+
+                <div class="metric-card">
+                    <h3>1,576</h3>
+                    <p>2025 Recalls</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>49%</h3>
+                    <p>Class I Recall Rate</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>303</h3>
+                    <p>Peak Monthly Recalls</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>3,116</h3>
+                    <p>Total Records</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DATASET -->
+
+        <section class="project-section">
+
+            <h2>Dataset & Methodology</h2>
+
+            <p><strong>Dataset Source:</strong> FDA Recall Dashboard</p>
+
+            <p><strong>Time Period:</strong> 2024–2025</p>
+
+            <p><strong>Data Type:</strong> Public Government Data</p>
+
+            <p><strong>Records:</strong> 3,116</p>
+
+            <p><strong>States Analyzed:</strong> 50</p>
+
+        </section>
+
+        <!-- DATA CLEANING -->
+
+        <section class="project-section">
+
+            <h2>Data Preparation & Cleaning</h2>
+
+            assets/fda-cleaning.png">
+
+            <ul class="spaced-list">
+
+                <li>Standardized inconsistent text fields.</li>
+
+                <br>
+
+                <li>Converted recall date fields into proper formats.</li>
+
+                <br>
+
+                <li>Created year and month derived fields.</li>
+
+                <br>
+
+                <li>Removed unnecessary metadata columns.</li>
+
+                <br>
+
+                <li>Reviewed null and missing values.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- SQL -->
+
+        <section class="project-section">
+
+            <h2>SQL Analysis</h2>
+
+            <details class="sql-dropdown">
+
+                <summary>
+                    Execute Query
+                </summary>
+
+                assets/fda-sql-1.png">
+
+            </details>
+
+        </section>
+
+        <!-- FINDINGS -->
+
+        <section class="project-section">
+
+            <h2>Key Findings</h2>
+
+            assets/fda-findings.png">
+
+            <div class="finding-card">
+
+                <h3>Total Recall Volume Increased</h3>
+
+                <p>
+                    Total recalls increased by 2.4% year-over-year.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="finding-card">
+
+                <h3>High-Risk Recalls Increased</h3>
+
+                <p>
+                    Class I recalls increased 15.4% year-over-year.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="finding-card">
+
+                <h3>Food Contamination Dominated Recall Activity</h3>
+
+                <p>
+                    Food contamination remained the dominant recall driver.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="finding-card">
+
+                <h3>California Saw the Largest Increase</h3>
+
+                <p>
+                    California recorded the largest year-over-year increase in recalls.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- RECOMMENDATIONS -->
+
+        <section class="project-section">
+
+            <h2>Recommendations</h2>
+
+            <ul class="spaced-list">
+
+                <li>Implement seasonal risk modeling for Q2 recall spikes.</li>
+
+                <br>
+
+                <li>Prioritize contamination-related inspection programs.</li>
+
+                <br>
+
+                <li>Allocate more resources toward Class I recall prevention.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- CONCLUSION -->
+
+        <section class="project-section">
+
+            <h2>Conclusion</h2>
+
+            <p>
+                The 2025 FDA recall landscape reveals a critical shift: recalls did not increase substantially in volume, but they became significantly more severe.
+            </p>
+
+            <br>
+
+            <p>
+                Contamination emerged as the dominant risk driver while high-risk Class I recalls increased from 43% to 49% of all cases.
+            </p>
+
+        </section>
+
+        <!-- PROJECT LINKS -->
+
+        <section class="project-section">
+
+            <h2>Project Links</h2>
+
+            <div class="project-links">
+
+                <a href="https://github.com/SelectFromEddy/FDA-Recall-Project-2024-2025"
+                   target="_blank"
+                   class="primary-btn">
+
+                    GitHub Repository
+
+                </a>
+
+                <a href="https://public.tableau.com/app/profile/eduardo.santiago3212"
+                   target="_blank"
+                   class="secondary-btn">
+
+                    Tableau Dashboard
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <div id="lightbox"
+         class="lightbox"
+         onclick="closeLightbox()">
+
+        <img id="lightbox-image">
+
+    </div>
+
+    <script>
+
+    function openLightbox(src) {
+
+        document.getElementById("lightbox").style.display = "flex";
+        document.getElementById("lightbox-image").src = src;
+    }
+
+    function closeLightbox() {
+
+        document.getElementById("lightbox").style.display = "none";
+    }
+
+    </script>
+
+</body>
+
+</html>
