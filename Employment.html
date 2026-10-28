@@ -621,54 +621,108 @@ onclick="openLightbox(this.src)">
     </summary>
 
     <pre class="sql-code">
-<span class="sql-keyword">WITH</span> base_data <span class="sql-keyword">AS</span> (
-
-    <span class="sql-keyword">SELECT</span>
+WITH base_data AS (
+    SELECT
         i.industry_name,
         d.date,
         d.month,
         d.year,
-        f.employment * 1000 <span class="sql-keyword">AS</span> employment
-
-    <span class="sql-keyword">FROM</span> fact_table <span class="sql-keyword">AS</span> f
-
-    <span class="sql-keyword">JOIN</span> dimindustry <span class="sql-keyword">AS</span> i
-        <span class="sql-keyword">ON</span> i.industry_id = f.industry_id
-
-    <span class="sql-keyword">JOIN</span> dimDate <span class="sql-keyword">AS</span> d
-        <span class="sql-keyword">ON</span> d.date_id = f.date_id
-
+        f.employment * 1000 AS employment
+    FROM fact_table AS f
+    JOIN dimindustry AS i
+        ON i.industry_id = f.industry_id
+    JOIN dimDate AS d
+        ON d.date_id = f.date_id
 ),
 
-lagged <span class="sql-keyword">AS</span> (
-
-    <span class="sql-keyword">SELECT</span>
+lagged AS (
+    SELECT
         industry_name,
         date,
         month,
         year,
         employment,
 
-        <span class="sql-function">LAG</span>(employment)
-        <span class="sql-keyword">OVER</span>(
-            <span class="sql-keyword">PARTITION BY</span> industry_name
-            <span class="sql-keyword">ORDER BY</span> date
-        ) <span class="sql-keyword">AS</span> prev_month,
+        LAG(employment) OVER (
+            PARTITION BY industry_name
+            ORDER BY date
+        ) AS prev_month,
 
-        <span class="sql-function">LAG</span>(employment,12)
-        <span class="sql-keyword">OVER</span>(
-            <span class="sql-keyword">PARTITION BY</span> industry_name
-            <span class="sql-keyword">ORDER BY</span> date
-        ) <span class="sql-keyword">AS</span> prev_year
+        LAG(employment, 12) OVER (
+            PARTITION BY industry_name
+            ORDER BY date
+        ) AS prev_year
 
-    <span class="sql-keyword">FROM</span> base_data
+    FROM base_data
+),
 
+calculations AS (
+    SELECT
+        industry_name,
+        date,
+        month,
+        year,
+        employment,
+
+        CASE
+            WHEN prev_month IS NULL THEN NULL
+            ELSE employment - prev_month
+        END AS mom_change,
+
+        CASE
+            WHEN prev_month IS NULL
+                OR prev_month = 0
+            THEN NULL
+            ELSE (employment - prev_month) * 1.0 / prev_month
+        END AS mom_growth,
+
+        CASE
+            WHEN prev_year IS NULL
+                OR prev_year = 0
+            THEN NULL
+            ELSE (employment - prev_year) * 1.0 / prev_year
+        END AS yoy_growth,
+
+        AVG(employment) OVER (
+            PARTITION BY industry_name
+            ORDER BY date
+            ROWS BETWEEN 2 PRECEDING
+            AND CURRENT ROW
+        ) AS moving_average
+
+    FROM lagged
+),
+
+volatility_calc AS (
+    SELECT
+        industry_name,
+        STDEV(mom_growth) AS volatility_pct
+    FROM calculations
+    GROUP BY industry_name
 )
 
-<span class="sql-comment">-- Additional query continues...</span>
+SELECT
+    c.industry_name,
+    c.date,
+    c.month,
+    c.year,
+    c.employment,
+    c.mom_change,
+    c.mom_growth,
+    c.yoy_growth,
+    c.moving_average,
+    v.volatility_pct
+
+FROM calculations c
+
+LEFT JOIN volatility_calc v
+    ON c.industry_name = v.industry_name
+
+WHERE c.industry_name <> 'Total nonfarm';
     </pre>
 
 </details>
+
 
 <br>
 
