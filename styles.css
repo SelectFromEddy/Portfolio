@@ -1382,6 +1382,12 @@ body {
 
     border-radius: 12px;
 }
+.dashboard-title {
+
+    text-align: center;
+
+    color: #76e36a;
+}
 
 
 
