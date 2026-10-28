@@ -656,6 +656,28 @@ lagged <span class="sql-keyword">AS</span> (
         </section>
 
     </section>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+    <img id="lightbox-image">
+
+</div>
+
+<script>
+
+function openLightbox(src) {
+
+    document.getElementById("lightbox").style.display = "flex";
+
+    document.getElementById("lightbox-image").src = src;
+}
+
+function closeLightbox() {
+
+    document.getElementById("lightbox").style.display = "none";
+}
+
+</script>
+
 
 </body>
     <section class="project-section">
