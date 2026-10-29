@@ -1388,6 +1388,15 @@ body {
 
     color: #76e36a;
 }
+.section-divider {
+
+    border: none;
+
+    border-top: 1px solid #1f1f1f;
+
+    margin: 40px 0;
+}
+
 
 
 
