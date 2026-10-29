@@ -102,60 +102,111 @@ body {
 /* HERO */
 
 .hero {
-    display: flex;
+
+    display: grid;
+
+    grid-template-columns: 1fr 450px;
+
     align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
-    padding: 5rem 8%;
-    max-width: 1400px;
-    margin: 0 auto;
-    background: transparent;
-    border: none;
-    box-shadow: none;
+
+    gap: 40px;
+
+    padding: 60px;
 }
 
-.hero-content {
-    flex: 1;
+.hero-tag {
+
+    color: #22c55e;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
 }
 
-.hero-image {
-    flex-shrink: 0;
+.hero h1 {
+
+    font-size: 4.2rem;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    margin: 20px 0;
 }
 
-.hero-image img {
-    width: 380px;
-    max-width: 100%;
-    height: auto;
-    display: block;
+.green {
+
+    color: #76e36a;
+
+    font-weight: 800;
+}
+
+
+.hero p {
+
+    max-width: 600px;
+
+    color: #9ca3af;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+    font-size: 1.05rem;
 }
 
 .hero-buttons {
+
     display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    background: transparent;
-    padding: 0;
-    border: none;
-    box-shadow: none;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 2rem;
-    }
+.hero-buttons a {
 
-    .hero-buttons {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+    width: 260px;
 
-    .hero-image img {
-        width: 260px;
-    }
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 }
 
+.primary-btn {
+
+    background: #22c55e;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+}
+
+.secondary-btn {
+
+    border: 1px solid #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+}
+}
 
 
 
