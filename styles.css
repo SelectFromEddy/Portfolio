@@ -1489,14 +1489,17 @@ body {
 
 .sql-dropdown {
 
-    margin-top: 25px;
+    width: 75%;
 
-    margin-bottom: 50px;
+    margin: 30px auto 50px;
+
+    text-align: center;
 }
-
 .sql-dropdown summary {
 
     cursor: pointer;
+
+    width: 100%;
 
     background: #111111;
 
@@ -1509,6 +1512,8 @@ body {
     color: #39c5ff;
 
     font-weight: 700;
+
+    text-align: center;
 
     transition: all 0.3s ease;
 }
