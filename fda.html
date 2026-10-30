@@ -401,8 +401,37 @@
 
             <h2>Data Preparation & Cleaning</h2>
 
-            <!-- INSERT CLEANING SCREENSHOT -->
+           <ul class="spaced-list">
 
+    <li>
+        Standardized inconsistent text fields (e.g., recall reasons and state names) to prevent fragmented groupings in aggregate queries.
+    </li>
+
+    <br>
+
+    <li>
+        Converted recall date fields into proper date format to enable accurate year-over-year and monthly trend analysis.
+    </li>
+
+    <br>
+
+    <li>
+        Created derived fields (recall year, recall month) to support time-based aggregations.
+    </li>
+
+    <br>
+
+    <li>
+        Removed non-essential metadata columns to streamline query performance and focus analysis on severity, geography, and recall cause.
+    </li>
+
+    <br>
+
+    <li>
+        Reviewed null or missing state values to ensure accurate state-level comparisons.
+    </li>
+
+</ul>
         </section>
 
         <!-- TOOLS -->
