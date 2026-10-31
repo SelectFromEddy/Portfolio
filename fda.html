@@ -1,923 +1,355 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        FDA Recall Risk & Severity Analysis (2024-2025)
-    </title>
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-
-            <span class="sql-blue">SELECT</span>
-            <span class="sql-blue">FROM</span>
-            <span class="sql-green">eddy</span>
-            <span class="sql-white">;</span>
-
-        </a>
-
-    </nav>
-
-    <section class="project-container">
-
-        <div class="project-hero">
-
-            <h1>
-                FDA Recall Risk &
-                Severity Analysis (2024-2025)
-            </h1>
-
-            <p class="project-subtitle">
-                SQL • Tableau • Excel • Risk Analytics
-            </p>
-
-        </div>
-
-        <!-- DASHBOARD -->
-
-        <section class="project-section">
-
-            <!-- INSERT FDA DASHBOARD IMAGE HERE -->
-
-        </section>
-
-        <!-- EXECUTIVE SUMMARY -->
-
-        <section class="project-section">
-
-            <h2>Executive Summary</h2>
-
-            <ul class="spaced-list">
-
-                <li>
-                    This project analyzes U.S. FDA recall data from 2024–2025 to identify trends in recall frequency, classification severity, and affected product categories.
-                </li>
-
-                <br>
-
-                <li>
-                    The analysis reveals that 2025 did not experience more recalls — it experienced more severe recalls, with food products accounting for the highest proportion of high-risk recalls.
-                </li>
-
-                <br>
-
-                <li>
-                    These findings help manufacturers and regulators identify high-risk segments and improve preventive monitoring strategies.
-                </li>
-
-            </ul>
-
-        </section>
-
-        <!-- BUSINESS PROBLEM -->
-
-        <section class="project-section">
-
-            <h2>Business Problem</h2>
-
-            <p>
-                How did recall risk and severity change from 2024 to 2025, and where should regulators focus preventive efforts?
-            </p>
-
-        </section>
-
-        <!-- KEY FINDINGS -->
-
-        <section class="project-section">
-
-            <h2>Key Findings</h2>
-
-            <ul class="spaced-list">
-
-                <li>Total recalls increased slightly (2.4%).</li>
-
-                <br>
-
-                <li>Class I recalls increased 15.4% year-over-year.</li>
-
-                <br>
-
-                <li>Food contamination was the dominant driver.</li>
-
-                <br>
-
-                <li>California showed the highest year-over-year increase.</li>
-
-            </ul>
-
-        </section>
-
-        <!-- BUSINESS IMPACT -->
-
-        <section class="project-section">
-
-            <h2>Business Impact</h2>
-
-            <p>
-                2025 saw higher public health risk despite stable overall recall volume.
-            </p>
-
-        </section>
-
-        <!-- BUSINESS CONTEXT -->
-
-        <section class="project-section">
-
-            <h2>Business Context & Objectives</h2>
-
-            <h3 class="project-subheading">
-                Why It Matters
-            </h3>
-
-            <br>
-
-            <ul class="spaced-list">
-
-                <li>
-                    Product recalls can result in financial loss, brand damage, and public health risk.
-                </li>
-
-                <br>
-
-                <li>
-                    This analysis aims to identify patterns in recall severity and frequency to support proactive risk management and regulatory monitoring.
-                </li>
-
-            </ul>
-
-            <br>
-
-            <h3 class="project-subheading">
-                Target Stakeholders
-            </h3>
-
-            <br>
-
-            <ul class="spaced-list">
-
-                <li>
-                    <strong>Primary:</strong> FDA Regulatory & Compliance Officers
-                </li>
-
-                <br>
-
-                <li>
-                    <strong>Secondary:</strong> Food Manufacturers & Quality Assurance Teams
-                </li>
-
-            </ul>
-
-        </section>
-
-        <!-- PROJECT OBJECTIVES -->
-
-        <section class="project-section">
-
-            <h2>Project Objectives</h2>
-
-            <ul class="spaced-list">
-
-                <li>
-                    Understand recall frequency trends between 2024 and 2025.
-                </li>
-
-                <br>
-
-                <li>
-                    Determine whether the most common recall classification changed year-over-year.
-                </li>
-
-                <br>
-
-                <li>
-                    Evaluate differences in monthly recall trends between 2024 and 2025.
-                </li>
-
-                <br>
-
-                <li>
-                    Identify which states experienced the largest increases or decreases in recalls.
-                </li>
-
-            </ul>
-
-        </section>
-
-        <!-- KPI SECTION -->
-
-     <section class="project-section">
-
-    <h2>Key Performance Indicators (KPIs)</h2>
-
-    <h3 class="project-subheading">
-        Total Recall Volume
-    </h3>
-
-    <p>
-        <strong>Definition:</strong> Total number of FDA recall events per year.
-    </p>
-
-    <br>
-
-    <ul class="spaced-list">
-
-        <li><strong>2024:</strong> 1,539 recalls</li>
-
-        <br>
-
-        <li><strong>2025:</strong> 1,576 recalls</li>
-
-        <br>
-
-        <li><strong>Year-over-Year Change:</strong> +37 recalls (<strong>+2.4%</strong>)</li>
-
-    </ul>
-
-    <br>
-
-    <p>
-        <strong>Why it matters:</strong>
-    </p>
-
-    <p>
-        Measures overall recall activity and regulatory workload. While volume remained similar, small increases may signal early shifts in compliance trends.
-    </p>
-
-    <br><br>
-
-    <h3 class="project-subheading">
-        High-Risk Recall Rate (Class I %)
-    </h3>
-
-    <p>
-        <strong>Definition:</strong> Percentage of total recalls classified as Class I (highest severity).
-    </p>
-
-    <br>
-
-    <ul class="spaced-list">
-
-        <li><strong>2024:</strong> 43% (667 of 1,539 recalls)</li>
-
-        <br>
-
-        <li><strong>2025:</strong> 49% (770 of 1,576 recalls)</li>
-
-        <br>
-
-        <li><strong>Change:</strong> +6 percentage points</li>
-
-        <br>
-
-        <li><strong>Class I volume increase:</strong> +103 recalls (<strong>+15.4%</strong>)</li>
-
-    </ul>
-
-    <br>
-
-    <p>
-        <strong>Why it matters:</strong>
-    </p>
-
-    <p>
-        Indicates whether recalls are becoming more serious. Although total recalls only rose 2.4%, high-risk recalls increased significantly, showing a shift toward greater public health exposure.
-    </p>
-
-    <br><br>
-
-    <h3 class="project-subheading">
-        Recall Closure Rate
-    </h3>
-
-    <p>
-        <strong>Definition:</strong> Percentage of recalls that were terminated (officially resolved).
-    </p>
-
-    <br>
-
-    <ul class="spaced-list">
-
-        <li><strong>2024:</strong> 88% terminated (1,358 of 1,539)</li>
-
-        <br>
-
-        <li><strong>2025:</strong> 45% terminated (703 of 1,576)</li>
-
-        <br>
-
-        <li><strong>Ongoing in 2025:</strong> 49% (778 recalls)</li>
-
-        <br>
-
-        <li><strong>Change:</strong> −43 percentage points in termination rate</li>
-
-    </ul>
-
-    <br>
-
-    <p>
-        <strong>Why it matters:</strong>
-    </p>
-
-    <p>
-        Measures operational efficiency and resolution speed. The sharp drop in closure rate suggests a growing backlog or slower recall resolution in 2025.
-    </p>
-
-    <br><br>
-
-    <h3 class="project-subheading">
-        Seasonal Spike Index
-    </h3>
-
-    <p>
-        <strong>Definition:</strong> Measures how much the highest recall month exceeds the average monthly baseline.
-    </p>
-
-    <br>
-
-    <ul class="spaced-list">
-
-        <li><strong>2025 Monthly Average:</strong> 131 recalls</li>
-
-        <br>
-
-        <li><strong>Peak Month (June 2025):</strong> 303 recalls</li>
-
-        <br>
-
-        <li><strong>Spike Index:</strong> 2.3× above average</li>
-
-    </ul>
-
-    <br>
-
-    <p>
-        <strong>Why it matters:</strong>
-    </p>
-
-    <p>
-        Identifies seasonal surges in recall activity. Significant spikes may require temporary increases in monitoring and inspection resources.
-    </p>
-
-</section>
-        <!-- DATASET -->
-
-        <section class="project-section">
-
-            <h2>Dataset & Methodology</h2>
-
-            <p><strong>Dataset Source:</strong> FDA Recall Dashboard</p>
-
-            <p><strong>Time Period:</strong> 2024–2025</p>
-
-            <p><strong>Datatype:</strong> Public Government Data</p>
-
-            <p><strong>Row Count:</strong> 3,116</p>
-
-            <p><strong>States Analyzed:</strong> 50</p>
-
-        </section>
-
-        <!-- DATA CLEANING -->
-
-        <section class="project-section">
-
-            <h2>Data Preparation & Cleaning</h2>
-
-           <ul class="spaced-list">
-
-    <li>
-        Standardized inconsistent text fields (e.g., recall reasons and state names) to prevent fragmented groupings in aggregate queries.
-    </li>
-
-    <br>
-
-    <li>
-        Converted recall date fields into proper date format to enable accurate year-over-year and monthly trend analysis.
-    </li>
-
-    <br>
-
-    <li>
-        Created derived fields (recall year, recall month) to support time-based aggregations.
-    </li>
-
-    <br>
-
-    <li>
-        Removed non-essential metadata columns to streamline query performance and focus analysis on severity, geography, and recall cause.
-    </li>
-
-    <br>
-
-    <li>
-        Reviewed null or missing state values to ensure accurate state-level comparisons.
-    </li>
-
-</ul>
-        </section>
-
-        <!-- TOOLS -->
-
-        <section class="project-section">
-
-            <h2>Tools Used</h2>
-
-            <ul class="spaced-list">
-
-                <li>SQL</li>
-
-                <br>
-
-                <li>Tableau</li>
-
-                <br>
-
-                <li>Excel</li>
-
-            </ul>
-
-        </section>
 
         <!-- FDA RECALL CLASS DEFINITIONS -->
-
         <section class="project-section">
-
             <h2>FDA Recall Class Definitions</h2>
 
-    <ul class="spaced-list">
+            <ul class="spaced-list">
+                <li>
+                    <strong>Class I</strong> – High risk; reasonable probability of serious health consequences or death.
+                </li>
+                <li>
+                    <strong>Class II</strong> – Temporary or medically reversible health effects.
+                </li>
+                <li>
+                    <strong>Class III</strong> – Unlikely to cause adverse health consequences.
+                </li>
+            </ul>
+        </section>
 
-        <li>
-            <strong>Class I</strong> – High risk; reasonable probability of serious health consequences or death.
-        </li>
+        <!-- RECALL CLASS ANALYSIS -->
+        <section class="project-section">
+            <h2>Recall Classification Analysis</h2>
 
-        <br>
+            <div class="chart-container">
+                <img
+                    src="assets/byclass.png"
+                    alt="FDA recalls by classification and year"
+                    class="project-image-medium clickable-image"
+                    onclick="openLightbox(this.src)">
+            </div>
 
-        <li>
-            <strong>Class II</strong> – Temporary or medically reversible health effects.
-        </li>
-
-        <br>
-
-        <li>
-            <strong>Class III</strong> – Unlikely to cause adverse health consequences.
-        </li>
-
-    </ul>
-
-</section>
-
-     
-
-    <div class="chart-container">
-
-    <img
-        src="assets/byclass.png"
-        alt="Recalls by Class by Year"
-        class="project-image-medium clickable-image"
-        onclick="openLightbox(this.src)">
-
-</div>
-        <br><br>
-
-          <details class="sql-dropdown">
-
-    <summary>
-        Execute Query
-    </summary>
-
-    <pre class="sql-code">
--- This query breaks down FDA recalls by recall class
--- for the years 2024 and 2025
+            <details class="sql-dropdown">
+                <summary>Execute Query</summary>
+                <pre class="sql-code"><code>-- Break down FDA recalls by class for 2024 and 2025
 
 SELECT
-
     YEAR(recall_date) AS recall_year,
     recall_class,
     COUNT(*) AS recall_count
-
 FROM fda_recalls
-
 WHERE YEAR(recall_date) IN (2024, 2025)
-
 GROUP BY
     YEAR(recall_date),
     recall_class
-
 ORDER BY
     recall_year,
-    recall_count DESC;
-    </pre>
+    recall_count DESC;</code></pre>
+            </details>
 
-</details>
-        <ul class="spaced-list">
+            <div class="chart-analysis">
+                <ul class="spaced-list">
+                    <li>
+                        Total recalls remained relatively consistent year over year, increasing 2.4% from 1,539 to 1,576.
+                    </li>
+                    <li>
+                        Class I recalls increased from 667 to 770, raising their share from approximately 43% to 49%.
+                    </li>
+                    <li>
+                        Class II recalls declined from 805 to 718.
+                    </li>
+                </ul>
 
-        <li>
-            Total recalls remained consistent year-over-year (+2.4%, from 1,539 to 1,576), but severity increased in 2025.
-        </li>
+                <h3 class="project-subheading">Takeaway</h3>
+                <p>
+                    Overall recall volume changed only slightly, while the number of high-severity Class I recalls increased substantially.
+                </p>
+            </div>
+        </section>
 
-        <br>
+        <!-- MONTHLY RECALL TRENDS -->
+        <section class="project-section">
+            <h2>Monthly Recall Trends</h2>
 
-        <li>
-            Class I recalls rose significantly from 667 to 770, increasing their share from 43% to 49%. Meanwhile, Class II recalls declined from 805 to 718.
-        </li>
+            <div class="chart-container">
+                <img
+                    src="assets/monthlyrecalls.png"
+                    alt="Monthly FDA recall trends for 2024 and 2025"
+                    class="project-image-medium clickable-image"
+                    onclick="openLightbox(this.src)">
+            </div>
 
-    </ul>
+            <details class="sql-dropdown">
+                <summary>Execute Query</summary>
+                <pre class="sql-code"><code>-- Calculate monthly recall counts for 2024 and 2025
 
-    <br>
-
-    <h3 class="project-subheading">
-        Takeaway
-    </h3>
-
-    <p>
-        2025 did not see more recalls overall — it saw <em>more high-risk recalls</em>.
-    </p>
-
-</section>
-
-    <!-- MONTHLY RECALL TRENDS -->
-
-<div class="chart-container">
-
-    <img
-        src="assets/monthlyrecalls.png"
-        alt="Monthly Recall Trends"
-        class="project-image-medium clickable-image"
-        onclick="openLightbox(this.src)">
-
-</div>
-
-   <br><br>
-
-          <details class="sql-dropdown">
-
-    <summary>
-        Execute Query
-    </summary>
-
-    <pre class="sql-code">
---This query find the total recalls per month in 2024 and in 2025
- 
- SELECT
-		YEAR(recall_date) AS recall_year,
-		DATENAME(MONTH, recall_date) AS recall_month,
-		MONTH(recall_date) AS month_number,
-		COUNT(*) AS recall_count
+SELECT
+    YEAR(recall_date) AS recall_year,
+    DATENAME(MONTH, recall_date) AS recall_month,
+    MONTH(recall_date) AS month_number,
+    COUNT(*) AS recall_count
 FROM fda_recalls
 WHERE YEAR(recall_date) IN (2024, 2025)
 GROUP BY
-		YEAR(recall_date),
-		DATENAME(MONTH, recall_date),
-		MONTH(recall_date)
-ORDER BY recall_year, month_number;
-    </pre>
+    YEAR(recall_date),
+    DATENAME(MONTH, recall_date),
+    MONTH(recall_date)
+ORDER BY
+    recall_year,
+    month_number;</code></pre>
+            </details>
 
-</details>
+            <div class="chart-analysis">
+                <ul class="spaced-list">
+                    <li>
+                        Recall activity varied throughout the year, with approximately 130 recalls per month across the two-year period.
+                    </li>
+                    <li>
+                        Activity peaked in June 2025 at 303 recalls and reached a low of 63 recalls in November 2025.
+                    </li>
+                    <li>
+                        Monthly patterns differed between years, highlighting the importance of examining trends beyond annual totals.
+                    </li>
+                </ul>
 
-<ul class="spaced-list">
+                <h3 class="project-subheading">Takeaway</h3>
+                <p>
+                    Monthly analysis reveals spikes and fluctuations that annual totals alone can conceal.
+                </p>
+            </div>
+        </section>
 
-    <li>
-        Recalls showed clear seasonality across 2024–2025, averaging approximately 130 recalls per month (3,115 total).
-    </li>
-
-    <br>
-
-    <li>
-        Activity peaked in June 2025 (303 recalls) and reached a low in November 2025 (63 recalls).
-    </li>
-
-    <br>
-
-    <li>
-        While 2024 remained relatively flat (147 to 145 recalls), 2025 trended upward from January to December (99 to 137, +38), indicating stronger momentum during the second half of the year.
-    </li>
-
-</ul>
-
-<br>
-
-<h3 class="project-subheading">
-    Takeaway
-</h3>
-
-<p>
-    Recalls followed a seasonal cycle, with 2025 showing a more pronounced late-year acceleration.
-</p>
-</section>
         <!-- RECALL REASONS -->
+        <section class="project-section">
+            <h2>Recall Reasons Analysis</h2>
 
-       <img
-        src="assets/recallreasons.png"
-        alt="Recall reasons"
-        class="project-image-medium clickable-image"
-        onclick="openLightbox(this.src)">
+            <div class="chart-container">
+                <img
+                    src="assets/recallreasons.png"
+                    alt="Most common FDA recall reasons"
+                    class="project-image-medium clickable-image"
+                    onclick="openLightbox(this.src)">
+            </div>
 
-</div>
- <br><br>
+            <details class="sql-dropdown">
+                <summary>Execute Query</summary>
+                <pre class="sql-code"><code>-- Rank the most common recall reasons by year
 
-          <details class="sql-dropdown">
-
-    <summary>
-        Execute Query
-    </summary>
-
-    <pre class="sql-code">
---This query gives the top ten recall reasons using windows functions and CTE's
-
-WITH recall_reasons as (
-SELECT
-		YEAR(recall_date) as recall_year,
-		recall_reason,
-		COUNT(*) AS total_recalls,
-		RANK() OVER(PARTITION BY YEAR(recall_date) ORDER BY Count(*) DESC ) AS reason_rank
-FROM fda_recalls
-WHERE YEAR(recall_date) IN (2024,2025)
-GROUP BY YEAR(recall_date), recall_reason
+WITH recall_reasons AS (
+    SELECT
+        YEAR(recall_date) AS recall_year,
+        recall_reason,
+        COUNT(*) AS total_recalls,
+        RANK() OVER (
+            PARTITION BY YEAR(recall_date)
+            ORDER BY COUNT(*) DESC
+        ) AS reason_rank
+    FROM fda_recalls
+    WHERE YEAR(recall_date) IN (2024, 2025)
+    GROUP BY
+        YEAR(recall_date),
+        recall_reason
 )
 SELECT
-		recall_year,
-		recall_reason,
-		total_recalls
+    recall_year,
+    recall_reason,
+    total_recalls
 FROM recall_reasons
-WHERE reason_rank <=5
-ORDER BY recall_year, recall_reason DESC;
-    </pre>
+WHERE reason_rank <= 5
+ORDER BY
+    recall_year,
+    total_recalls DESC;</code></pre>
+            </details>
 
-</details>
+            <div class="chart-analysis">
+                <ul class="spaced-list">
+                    <li>
+                        Recall reasons help identify recurring product safety issues that may warrant additional attention.
+                    </li>
+                    <li>
+                        Pathogen-related concerns, including Listeria and Salmonella, were important drivers of food recall activity.
+                    </li>
+                    <li>
+                        Reviewing the most frequent reasons by year helps reveal which risks remain persistent and which change over time.
+                    </li>
+                </ul>
 
-	<div class="chart-analysis">
-
-    <ul class="spaced-list">
-
-        <li>
-            Recall volume remained nearly identical year-over-year (+3%), but contamination risks drove activity.
-        </li>
-
-        <br>
-
-        <li>
-            The primary drivers were pathogen-related recalls, led by Listeria contamination on food contact surfaces (86 recalls in 2025).
-        </li>
-
-        <br>
-
-        <li>
-            Salmonella-related incidents were also significant, including ingredient-level contamination (e.g., cucumbers linked to sushi recalls).
-        </li>
-
-    </ul>
-
-    <br>
-
-    <h3 class="project-subheading">
-        Takeaway
-    </h3>
-
-    <p>
-        While overall recall volume changed minimally, food safety risks—particularly environmental and ingredient contamination—remained the dominant trigger.
-    </p>
-
-</div>
-                <!-- PASTE SQL QUERY -->
-
-        
+                <h3 class="project-subheading">Takeaway</h3>
+                <p>
+                    Identifying recurring contamination-related risks can help inform quality assurance, preventive controls, and regulatory monitoring.
+                </p>
+            </div>
+        </section>
 
         <!-- STATE ANALYSIS -->
-
         <section class="project-section">
- <img
-        src="assets/largestincrease.png"
-        alt="increase"
-        class="project-image-medium clickable-image"
-        onclick="openLightbox(this.src)">
+            <h2>State-Level Recall Analysis</h2>
 
-</div>
-			 <img
-        src="assets/largestdecrease.png"
-        alt="decrease"
-        class="project-image-medium clickable-image"
-        onclick="openLightbox(this.src)">
+            <div class="chart-container">
+                <img
+                    src="assets/largestincrease.png"
+                    alt="States with the largest increases in FDA recalls"
+                    class="project-image-medium clickable-image"
+                    onclick="openLightbox(this.src)">
+            </div>
 
-</div>
- <br><br>
+            <div class="chart-container">
+                <img
+                    src="assets/largestdecrease.png"
+                    alt="States with the largest decreases in FDA recalls"
+                    class="project-image-medium clickable-image"
+                    onclick="openLightbox(this.src)">
+            </div>
 
-          <details class="sql-dropdown">
-
-    <summary>
-        Execute Query
-    </summary>
-
-    <pre class="sql-code">
---This query shows total recalls by state 
-in 2024 and 2025 with CTE and case statements
+            <details class="sql-dropdown">
+                <summary>Execute Query</summary>
+                <pre class="sql-code"><code>-- Compare recall counts by state across both years
 
 WITH recall_state_year_counts AS (
-select 
-		recall_state,
-		YEAR(recall_date) AS recall_year,
-		COUNT(*) AS recall_count
-FROM fda_recalls
-WHERE YEAR(recall_date) IN (2024,2025)
-GROUP BY 
-		recall_state, YEAR(recall_date)
-	)
+    SELECT
+        recall_state,
+        YEAR(recall_date) AS recall_year,
+        COUNT(*) AS recall_count
+    FROM fda_recalls
+    WHERE YEAR(recall_date) IN (2024, 2025)
+    GROUP BY
+        recall_state,
+        YEAR(recall_date)
+)
 SELECT
-		recall_state,
-		SUM(CASE WHEN recall_year = 2024 THEN recall_count ELSE 0 END) AS recalls_2024,
-		SUM(CASE WHEN recall_year = 2025 THEN recall_count ELSE 0 END) AS recalls_2025,
-		SUM(CASE WHEN recall_year = 2025 THEN recall_count ELSE 0 END) -
-		SUM(CASE WHEN recall_year = 2024 THEN recall_count ELSE 0 END) AS yoy_change
+    recall_state,
+    SUM(
+        CASE WHEN recall_year = 2024
+        THEN recall_count ELSE 0 END
+    ) AS recalls_2024,
+    SUM(
+        CASE WHEN recall_year = 2025
+        THEN recall_count ELSE 0 END
+    ) AS recalls_2025,
+    SUM(
+        CASE WHEN recall_year = 2025
+        THEN recall_count ELSE 0 END
+    ) -
+    SUM(
+        CASE WHEN recall_year = 2024
+        THEN recall_count ELSE 0 END
+    ) AS yoy_change
 FROM recall_state_year_counts
 GROUP BY recall_state
-ORDER BY yoy_change DESC;
-    </pre>
+ORDER BY yoy_change DESC;</code></pre>
+            </details>
 
-</details>
-			<section class="project-section">
+            <div class="chart-analysis">
+                <ul class="spaced-list">
+                    <li>
+                        State-level comparisons highlight geographic differences in reported recall activity.
+                    </li>
+                    <li>
+                        California emerged as a significant area of interest in the year-over-year analysis.
+                    </li>
+                    <li>
+                        Comparing both increases and decreases helps distinguish states driving overall growth from those experiencing declines.
+                    </li>
+                </ul>
 
-    <div class="chart-analysis">
+                <h3 class="project-subheading">Takeaway</h3>
+                <p>
+                    Geographic analysis helps identify where reported recall activity changed most and where further investigation may be warranted.
+                </p>
+            </div>
+        </section>
 
-        <ul class="spaced-list">
+        <!-- BUSINESS INTERPRETATION -->
+        <section class="project-section">
+            <h2>Business Interpretation</h2>
 
-            <li>
-                Recall activity in 2025 was driven by state-level outliers rather than nationwide shifts.
-            </li>
+            <p>
+                The analysis demonstrates why recall volume should not be evaluated in isolation. Classification severity, recall causes, monthly patterns, and geographic differences provide additional context for understanding food safety risks.
+            </p>
 
-            <br>
-
-            <li>
-                California emerged as the #1 recall state in 2025.
-            </li>
-
-            <br>
-
-            <li>
-                The top five states with increases each added roughly 50–120 additional recalls, accounting for most of the national growth.
-            </li>
-
-            <br>
-
-            <li>
-                Conversely, the top five states with declines reduced recalls by 60–140 cases each, reflecting substantial year-over-year drops rather than minor improvements.
-            </li>
-
-        </ul>
-
-        <br>
-
-        <h3 class="project-subheading">
-            Takeaway
-        </h3>
-
-        <p>
-            National recall trends were shaped by a small group of high-impact states, not broad changes across the country.
-        </p>
-
-    </div>
-
-</section>
-
-<section class="project-section">
-
-    <h3>Business Interpretation</h3>
-
-    <p>
-        2025 saw increased public health risk despite stable total recall volume.
-    </p>
-
-</section>
-
+            <p>
+                For regulators and quality assurance teams, these findings can support more targeted investigation, preventive controls, and resource planning.
+            </p>
         </section>
 
         <!-- LIMITATIONS -->
+        <section class="project-section">
+            <h2>Limitations</h2>
 
-      <section class="project-section">
-
-    <h2>Limitations</h2>
-
-    <ul class="spaced-list">
-
-        <li>
-            The analysis includes only recalls that were classified in the source dataset.
-        </li>
-
-        <br>
-
-        <li>
-            The FDA dashboard is updated on a rolling basis, so counts may change as new records are published or existing records are revised.
-        </li>
-
-        <br>
-
-        <li>
-            The time window is limited to two years (2024–2025), which may not capture longer-term patterns or rare events.
-        </li>
-
-    </ul>
-
-</section>
-          
+            <ul class="spaced-list">
+                <li>
+                    The analysis includes only recalls represented in the source dataset.
+                </li>
+                <li>
+                    The FDA dashboard is updated on a rolling basis, so counts may change as records are published or revised.
+                </li>
+                <li>
+                    The two-year period (2024–2025) may not capture longer-term patterns or less frequent events.
+                </li>
+                <li>
+                    Observed associations do not establish the underlying cause of differences between states, months, or recall classifications.
+                </li>
+            </ul>
+        </section>
 
         <!-- RECOMMENDATIONS -->
+        <section class="project-section">
+            <h2>Recommendations / Next Steps</h2>
 
-  <section class="project-section">
-
-    <h2>Recommendations / Next Steps</h2>
-
-    <ul class="spaced-list">
-
-        <li>
-            Implement seasonal risk modeling to anticipate recall surges in Q2 (June 2025 recorded 303 recalls, the highest monthly spike).
-        </li>
-
-        <br>
-
-        <li>
-            Prioritize inspections for contamination-related issues (8 of the top 10 recall reasons were potential contamination cases).
-        </li>
-
-        <br>
-
-        <li>
-            Allocate more resources to Class I recall prevention (Class I recalls increased from 667 to 770 year-over-year).
-        </li>
-
-    </ul>
-
-</section>
+            <ul class="spaced-list">
+                <li>
+                    Investigate recurring seasonal spikes to determine whether additional monitoring resources may be needed during peak periods.
+                </li>
+                <li>
+                    Prioritize review of recurring contamination-related issues using recall frequency and classification severity.
+                </li>
+                <li>
+                    Examine the drivers behind changes in Class I recalls to identify opportunities for stronger preventive controls.
+                </li>
+                <li>
+                    Validate state-level differences against reporting coverage and product-category mix before making resource allocation decisions.
+                </li>
+            </ul>
+        </section>
 
         <!-- NEXT ANALYTICAL STEPS -->
+        <section class="project-section">
+            <h2>Next Analytical Steps</h2>
 
-       <section class="project-section">
-
-    <h2>Next Analytical Steps</h2>
-
-    <ul class="spaced-list">
-
-        <li>
-            Build a classification model to predict the likelihood a recall will be Class I based on product type, reason, and geography.
-        </li>
-
-        <br>
-
-        <li>
-            Develop a seasonal forecast of monthly recall volume to better staff inspections ahead of Q2 spikes.
-        </li>
-
-        <br>
-
-        <li>
-            Cluster states by recall profile (volume, severity, drivers) to prioritize regulatory outreach.
-        </li>
-
-    </ul>
-
-</section>
+            <ul class="spaced-list">
+                <li>
+                    Develop a classification model to estimate the likelihood of a recall being Class I using appropriate product, reason, and geographic features.
+                </li>
+                <li>
+                    Explore monthly forecasting methods to assess whether historical patterns can help anticipate changes in recall volume.
+                </li>
+                <li>
+                    Group states by recall volume, severity, and recall drivers to identify distinct risk profiles.
+                </li>
+            </ul>
+        </section>
 
         <!-- CONCLUSION -->
+        <section class="project-section">
+            <h2>Conclusion</h2>
 
-       <section class="project-section">
+            <ul class="spaced-list">
+                <li>
+                    Total recall volume increased only modestly between 2024 and 2025, while Class I recalls rose from 667 to 770.
+                </li>
+                <li>
+                    Examining recall reasons provides additional insight into contamination-related risks and recurring product safety issues.
+                </li>
+                <li>
+                    Monthly and state-level comparisons reveal differences that cannot be understood from national annual totals alone.
+                </li>
+            </ul>
 
-    <h2>Conclusion</h2>
+            <p>
+                Overall, this project demonstrates how SQL, Excel, and Tableau can be used to transform public FDA data into actionable insights about recall frequency, severity, and risk patterns.
+            </p>
+        </section>
 
-    <ul class="spaced-list">
-
-        <li>
-            The 2025 FDA recall landscape reveals a critical shift: recalls didn't increase in volume, but they became significantly more dangerous.
-        </li>
-
-        <br>
-
-        <li>
-            Contamination—particularly from Listeria and Salmonella—emerged as the dominant systemic threat, while high-risk Class I recalls rose from 43% to 49% of all cases.
-        </li>
-
-        <br>
-
-        <li>
-            Risk concentration in a handful of states suggests that targeted, severity-based monitoring would be more effective than broad nationwide surveillance.
-        </li>
-
-    </ul>
-
-</section>
-    
-</section>
+    </section><!-- End project-container -->
 
 </body>
-
 </html>
