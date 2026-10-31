@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA 7(a) Small Business Lending Analysis (2022–2025)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="sql-blue">SELECT</span>
+            <span class="sql-blue">FROM</span>
+            <span class="sql-green">eddy</span>
+            <span class="sql-white">;</span>
+        </a>
+    </nav>
+
+    <main class="project-container">
+
+        <!-- PROJECT HEADER -->
+        <header class="project-hero">
+            <h1>SBA 7(a) Small Business Lending Analysis (2022–2025)</h1>
+            <p class="project-subtitle">
+                Microsoft Excel • Power Query • Power Pivot • DAX • Data Modeling
+            </p>
+        </header>
+
+        <!-- PROJECT OVERVIEW -->
+        <section class="project-section">
+            <h2>Project Overview</h2>
+
+            <p>
+                This project analyzes SBA 7(a) loan activity between 2022 and 2025 using Microsoft Excel, Power Query, Power Pivot, DAX, and the Excel Data Model.
+            </p>
+
+            <p>
+                The objective was to evaluate lending growth, geographic and industry concentration, charge-off risk, and employment impact using publicly available SBA loan data. Through data cleaning, modeling, KPI development, and dashboard design, I transformed raw loan-level data into actionable business insights.
+            </p>
+        </section>
+
+        <!-- DASHBOARD PREVIEW -->
+        <section class="project-section">
+            <h2>Dashboard Preview</h2>
+
+            <div class="project-image">
+                <img src="assets/Main_.png" alt="SBA 7(a) Lending Dashboard">
+            </div>
+        </section>
+
+        <!-- BUSINESS QUESTIONS -->
+        <section class="project-section">
+            <h2>Business Questions</h2>
+
+            <p>This project focused on answering five key business questions:</p>
+
+            <ol class="spaced-list">
+                <li>How did total SBA lending change between 2022 and 2025?</li>
+                <li>Which states received the most SBA loans and how did lending activity change over time?</li>
+                <li>Which industries received the most SBA financing?</li>
+                <li>Where was charge-off risk highest?</li>
+                <li>What does the Jobs Supported metric reveal about the economic impact of SBA lending?</li>
+            </ol>
+        </section>
+
+        <!-- KEY FINDINGS -->
+        <section class="project-section">
+            <h2>Key Findings</h2>
+
+            <!-- SBA LENDING GROWTH -->
+            <h3 class="project-subheading">SBA Lending Growth</h3>
+
+            <ul class="spaced-list">
+                <li>SBA lending nearly doubled between 2022 and 2025.</li>
+                <li>California received approximately <strong>$16 billion</strong> in SBA loans.</li>
+                <li>California accounted for <strong>13%</strong> of total loan dollars.</li>
+            </ul>
+
+            <h3 class="project-subheading">Insight</h3>
+
+            <blockquote>
+                SBA lending nearly doubled during the study period, indicating growing demand for small business financing across the United States.
+            </blockquote>
+
+            <hr>
+
+            <!-- STATE ANALYSIS -->
+            <h3 class="project-subheading">State Analysis</h3>
+
+            <ul class="spaced-list">
+                <li>California led with approximately <strong>28.9K loans</strong>.</li>
+                <li>California represented <strong>11.4%</strong> of total loan volume.</li>
+                <li>Hawaii recorded the strongest growth rate at <strong>110%</strong>.</li>
+                <li>California, Texas, and Florida accounted for <strong>26.9%</strong> of all SBA loans.</li>
+            </ul>
+
+            <h3 class="project-subheading">Insight</h3>
+
+            <blockquote>
+                While California remained the largest SBA lending market, Hawaii recorded the strongest growth, suggesting lending expansion beyond traditional high-volume markets.
+            </blockquote>
+
+            <hr>
+
+            <!-- INDUSTRY ANALYSIS -->
+            <h3 class="project-subheading">Industry Analysis</h3>
+
+            <ul class="spaced-list">
+                <li>Full-Service Restaurants received more than <strong>12,000 loans</strong>.</li>
+                <li>Full-Service Restaurants represented <strong>4.7%</strong> of total loan volume.</li>
+                <li>Hotels (except Casino Hotels) and Motels received approximately <strong>$7.4 billion</strong> in funding.</li>
+                <li>The top three industries accounted for <strong>10.4%</strong> of all loans.</li>
+            </ul>
+
+            <h3 class="project-subheading">Insight</h3>
+
+            <blockquote>
+                Despite strong activity within several industries, SBA lending remained broadly distributed across multiple business sectors.
+            </blockquote>
+
+            <hr>
+
+            <!-- CHARGE-OFF RISK -->
+            <h3 class="project-subheading">Charge-Off Risk Analysis</h3>
+
+            <ul class="spaced-list">
+                <li>Limited-Service Restaurants generated approximately <strong>$25.5 million</strong> in charge-offs.</li>
+                <li>California generated approximately <strong>$86.6 million</strong> in charge-offs.</li>
+                <li>Secondary Smelting and Alloying of Aluminum recorded the highest charge-off risk at <strong>71.5%</strong>.</li>
+            </ul>
+
+            <h3 class="project-subheading">Insight</h3>
+
+            <blockquote>
+                Overall charge-off activity remained low relative to total lending volume, although risk was concentrated in several industries and geographic markets.
+            </blockquote>
+
+            <hr>
+
+            <!-- EMPLOYMENT IMPACT -->
+            <h3 class="project-subheading">Employment Impact</h3>
+
+            <ul class="spaced-list">
+                <li>SBA-backed loans supported approximately <strong>2.5 million jobs</strong>.</li>
+                <li>Full-Service Restaurants supported over <strong>248,000 jobs</strong>.</li>
+                <li>California supported approximately <strong>302,000 jobs</strong>.</li>
+                <li>Jobs supported increased by <strong>66%</strong> during the study period.</li>
+            </ul>
+
+            <h3 class="project-subheading">Insight</h3>
+
+            <blockquote>
+                SBA lending generated substantial employment impact, with reported jobs supported increasing significantly between 2022 and 2025.
+            </blockquote>
+        </section>
+
+        <!-- TECHNICAL PROCESS -->
+        <section class="project-section">
+            <h2>Technical Process</h2>
+
+            <!-- DATA PREPARATION -->
+            <h3 class="project-subheading">Data Preparation</h3>
+
+            <div class="project-image">
+                <img src="assets/query.png" alt="Excel Power Query Data Preparation">
+            </div>
+
+            <h3 class="project-subheading">Process</h3>
+
+            <ul class="spaced-list">
+                <li>Standardized column names and data types</li>
+                <li>Removed unnecessary fields</li>
+                <li>Filtered records for the analysis period</li>
+                <li>Created month and quarter attributes</li>
+                <li>Replaced inconsistent values</li>
+                <li>Prepared data for modeling and analysis</li>
+            </ul>
+
+            <hr>
+
+            <!-- DATA MODEL -->
+            <h3 class="project-subheading">Data Model</h3>
+
+            <div class="project-image">
+                <img src="assets/Data_Model.png" alt="Excel Data Model">
+            </div>
+
+            <h3 class="project-subheading">Process</h3>
+
+            <p>
+                Built an Excel Data Model using a Fact Loans table and Date table to support time-based reporting and KPI calculations.
+            </p>
+
+            <hr>
+
+            <!-- DAX MEASURES -->
+            <h3 class="project-subheading">DAX Measures</h3>
+
+            <div class="project-image">
+                <img src="assets/Dax.png" alt="DAX Measures">
+            </div>
+
+            <h3 class="project-subheading">Measures Developed</h3>
+
+            <ul class="spaced-list">
+                <li>Total Lending</li>
+                <li>Total Loans</li>
+                <li>Average Loan Size</li>
+                <li>Average Interest Rate</li>
+                <li>Charge-Off Rate</li>
+                <li>Total Jobs Supported</li>
+            </ul>
+
+            <hr>
+
+            <!-- PIVOT ANALYSIS -->
+            <h3 class="project-subheading">Pivot Analysis</h3>
+
+            <div class="project-image">
+                <img src="assets/Pivot_Tables.png" alt="Excel Pivot Table Analysis">
+            </div>
+
+            <h3 class="project-subheading">Process</h3>
+
+            <p>PivotTables were used to evaluate:</p>
+
+            <ul class="spaced-list">
+                <li>Lending growth</li>
+                <li>State concentration</li>
+                <li>Industry concentration</li>
+                <li>Charge-off risk</li>
+                <li>Employment impact</li>
+            </ul>
+        </section>
+
+        <!-- TOOLS USED -->
+        <section class="project-section">
+            <h2>Tools Used</h2>
+
+            <h3 class="project-subheading">Microsoft Excel</h3>
+
+            <ul class="spaced-list">
+                <li>Power Query</li>
+                <li>Power Pivot</li>
+                <li>DAX</li>
+                <li>Excel Data Model</li>
+                <li>PivotTables</li>
+                <li>PivotCharts</li>
+                <li>Interactive Slicers</li>
+            </ul>
+        </section>
+
+        <!-- SKILLS DEMONSTRATED -->
+        <section class="project-section">
+            <h2>Skills Demonstrated</h2>
+
+            <h3 class="project-subheading">Analytics</h3>
+
+            <ul class="spaced-list">
+                <li>Data Cleaning</li>
+                <li>Data Transformation</li>
+                <li>Data Validation</li>
+                <li>Exploratory Data Analysis</li>
+                <li>Trend Analysis</li>
+                <li>Geographic Analysis</li>
+                <li>Risk Analysis</li>
+            </ul>
+
+            <h3 class="project-subheading">Business Intelligence</h3>
+
+            <ul class="spaced-list">
+                <li>KPI Development</li>
+                <li>Dashboard Development</li>
+                <li>Data Modeling</li>
+                <li>Executive Reporting</li>
+                <li>Data Storytelling</li>
+            </ul>
+
+            <h3 class="project-subheading">Technical</h3>
+
+            <ul class="spaced-list">
+                <li>Excel</li>
+                <li>Power Query</li>
+                <li>Power Pivot</li>
+                <li>DAX</li>
+                <li>Tableau Concepts</li>
+                <li>SQL Concepts</li>
+            </ul>
+        </section>
+
+        <!-- PROJECT WORKFLOW -->
+        <section class="project-section">
+            <h2>Project Workflow</h2>
+
+            <div class="workflow">
+                <p>Business Question</p>
+                <span>↓</span>
+                <p>Data Collection</p>
+                <span>↓</span>
+                <p>Data Cleaning & Validation</p>
+                <span>↓</span>
+                <p>Power Query Transformation</p>
+                <span>↓</span>
+                <p>Data Modeling (Power Pivot)</p>
+                <span>↓</span>
+                <p>DAX Measure Development</p>
+                <span>↓</span>
+                <p>Pivot Table Analysis</p>
+                <span>↓</span>
+                <p>KPI Development</p>
+                <span>↓</span>
+                <p>Dashboard Design</p>
+                <span>↓</span>
+                <p>Insight Generation</p>
+                <span>↓</span>
+                <p>Business Interpretation</p>
+            </div>
+        </section>
+
+        <!-- FINAL TAKEAWAY -->
+        <section class="project-section">
+            <h2>Final Takeaway</h2>
+
+            <p>
+                This project demonstrates how Microsoft Excel can be used to transform a large public dataset into meaningful business insights.
+            </p>
+
+            <p>
+                By cleaning, modeling, and analyzing SBA 7(a) loan data, I identified lending trends, evaluated risk, measured employment impact, and answered business-focused questions through an interactive dashboard.
+            </p>
+
+            <p>
+                The project highlights skills in data preparation, business intelligence, KPI development, dashboard design, and data storytelling while showing how raw data can be transformed into actionable insights that support decision-making.
+            </p>
+        </section>
+
+        <!-- LINKS -->
+        <section class="project-section project-links">
+            <h2>GitHub Repository</h2>
+            <p>
+                <a href="https://github.com/SelectFromEddy" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </p>
+
+            <h2>Resume</h2>
+            <p>
+                <a href="https://www.dropbox.com/scl/fi/9nmbxjoq3uvl4m6m01ei7/Resume-2026.pdf?rlkey=3r91gsdafstla1p6qy45n9ou6&st=fj25ottk&dl=1" target="_blank" rel="noopener noreferrer">
+                    Resume
+                </a>
+            </p>
+
+            <h2>LinkedIn</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/eduardo-santiago-831806a0/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
