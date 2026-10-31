@@ -561,34 +561,29 @@ ORDER BY
 
 </div>
 
-<details class="sql-dropdown">
+   <br><br>
+
+          <details class="sql-dropdown">
 
     <summary>
         Execute Query
     </summary>
 
     <pre class="sql-code">
--- This query finds total recalls per month
--- in 2024 and 2025
-
-SELECT
-    YEAR(recall_date) AS recall_year,
-    DATENAME(MONTH, recall_date) AS recall_month,
-    MONTH(recall_date) AS month_number,
-    COUNT(*) AS recall_count
-
+--This query find the total recalls per month in 2024 and in 2025
+ 
+ SELECT
+		YEAR(recall_date) AS recall_year,
+		DATENAME(MONTH, recall_date) AS recall_month,
+		MONTH(recall_date) AS month_number,
+		COUNT(*) AS recall_count
 FROM fda_recalls
-
 WHERE YEAR(recall_date) IN (2024, 2025)
-
 GROUP BY
-    YEAR(recall_date),
-    DATENAME(MONTH, recall_date),
-    MONTH(recall_date)
-
-ORDER BY
-    recall_year,
-    month_number;
+		YEAR(recall_date),
+		DATENAME(MONTH, recall_date),
+		MONTH(recall_date)
+ORDER BY recall_year, month_number;
     </pre>
 
 </details>
@@ -632,14 +627,16 @@ ORDER BY
         onclick="openLightbox(this.src)">
 
 </div>
-<details class="sql-dropdown">
+ <br><br>
 
-                <summary>
-                    Execute Query
-                </summary>
-                <pre class="sql-code">
+          <details class="sql-dropdown">
 
-             --This query gives the top ten recall reasons using windows functions and CTE's
+    <summary>
+        Execute Query
+    </summary>
+
+    <pre class="sql-code">
+--This query gives the top ten recall reasons using windows functions and CTE's
 
 WITH recall_reasons as (
 SELECT
@@ -658,10 +655,10 @@ SELECT
 FROM recall_reasons
 WHERE reason_rank <=5
 ORDER BY recall_year, recall_reason DESC;
-
-           </pre>
+    </pre>
 
 </details>
+
 	<div class="chart-analysis">
 
     <ul class="spaced-list">
@@ -716,15 +713,16 @@ ORDER BY recall_year, recall_reason DESC;
         onclick="openLightbox(this.src)">
 
 </div>
-            
-			<details class="sql-dropdown">
+ <br><br>
 
-                <summary>
-                    Execute Query
-                </summary>
-                <pre class="sql-code">
+          <details class="sql-dropdown">
 
-          --This query shows total recalls by state 
+    <summary>
+        Execute Query
+    </summary>
+
+    <pre class="sql-code">
+--This query shows total recalls by state 
 in 2024 and 2025 with CTE and case statements
 
 WITH recall_state_year_counts AS (
@@ -746,8 +744,7 @@ SELECT
 FROM recall_state_year_counts
 GROUP BY recall_state
 ORDER BY yoy_change DESC;
-
-           </pre>
+    </pre>
 
 </details>
 			<section class="project-section">
