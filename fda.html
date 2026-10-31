@@ -722,8 +722,9 @@ ORDER BY recall_year, recall_reason DESC;
                 <summary>
                     Execute Query
                 </summary>
+                <pre class="sql-code">
 
-               --This query shows total recalls by state 
+          --This query shows total recalls by state 
 in 2024 and 2025 with CTE and case statements
 
 WITH recall_state_year_counts AS (
@@ -745,7 +746,8 @@ SELECT
 FROM recall_state_year_counts
 GROUP BY recall_state
 ORDER BY yoy_change DESC;
-				           </pre>
+
+           </pre>
 
 </details>
 			<section class="project-section">
