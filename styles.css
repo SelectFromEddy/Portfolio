@@ -1546,6 +1546,99 @@ body {
 
     text-align: left;
 }
+/* ==================================
+   FDA PAGE CENTERING FIX
+================================== */
+
+.project-section {
+
+    text-align: center;
+}
+
+.project-section p {
+
+    text-align: center;
+}
+
+.project-section ul {
+
+    width: 75%;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+.chart-container {
+
+    text-align: center;
+
+    width: 100%;
+}
+
+.project-image-medium {
+
+    width: 75%;
+
+    max-width: 900px;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+
+    border: 1px solid #1f1f1f;
+}
+
+.sql-dropdown {
+
+    width: 75%;
+
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+.sql-dropdown summary {
+
+    text-align: center;
+}
+
+.chart-analysis {
+
+    width: 75%;
+
+    margin: 0 auto;
+}
+
+.chart-analysis p {
+
+    text-align: center;
+}
+
+.chart-analysis .project-subheading {
+
+    text-align: center;
+}
+
+.project-subheading {
+
+    text-align: center;
+}
+
+.project-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
 
 
 
