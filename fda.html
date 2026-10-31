@@ -549,82 +549,91 @@ ORDER BY
 
 </section>
 
-        <!-- MONTHLY TRENDS -->
+     <!-- MONTHLY RECALL TRENDS -->
 
-       <div class="chart-container">
+<section class="project-section">
 
-    <img
-        src="assets/monthlyrecalls.png"
-        alt="Recalls by month"
-        class="project-image-medium clickable-image"
-        onclick="openLightbox(this.src)">
+    <h2>Monthly Recall Trends</h2>
 
-</div>
+    <div class="chart-container">
+
+        <img
+            src="assets/monthlyrecalls.png"
+            alt="Monthly Recall Trends"
+            class="project-image-medium clickable-image"
+            onclick="openLightbox(this.src)">
+
+    </div>
+
     <br><br>
 
+    <details class="sql-dropdown">
 
+        <summary>
+            Execute Query
+        </summary>
+
+        <pre class="sql-code">
+-- This query finds total recalls per month
+-- in 2024 and 2025
+
+SELECT
+    YEAR(recall_date) AS recall_year,
+    DATENAME(MONTH, recall_date) AS recall_month,
+    MONTH(recall_date) AS month_number,
+    COUNT(*) AS recall_count
+
+FROM fda_recalls
+
+WHERE YEAR(recall_date) IN (2024, 2025)
+
+GROUP BY
+    YEAR(recall_date),
+    DATENAME(MONTH, recall_date),
+    MONTH(recall_date)
+
+ORDER BY
+    recall_year,
+    month_number;
+        </pre>
+
+    </details>
+
+    <br>
+
+    <ul class="spaced-list">
+
+        <li>
+            Recalls showed clear seasonality across 2024–2025, averaging approximately 130 recalls per month (3,115 total).
+        </li>
+
+        <br>
+
+        <li>
+            Activity peaked in June 2025 (303 recalls) and reached a low in November 2025 (63 recalls).
+        </li>
+
+        <br>
+
+        <li>
+            While 2024 remained relatively flat (147 to 145 recalls), 2025 trended upward from January to December (99 to 137, +38), indicating stronger momentum during the second half of the year.
+        </li>
+
+    </ul>
+
+    <br>
+
+    <h3 class="project-subheading">
+        Takeaway
+    </h3>
+
+    <p>
+        Recalls followed a seasonal cycle, with 2025 showing a more pronounced late-year acceleration.
+    </p>
 
 </section>
 
-<details class="sql-dropdown">
-
-                <summary>
-                    Execute Query
-                </summary>
-                <pre class="sql-code">
-
-                <!-- PASTE SQL QUERY -->
-                in 2025
---This query find the total recalls per month in 2024 and
-SELECT
-YEAR(recall_date) AS recall_year,
-DATENAME(MONTH, recall_date) AS recall_month,
-MONTH(recall_date) AS month_number,
-COUNT(*) AS recall_count
-FROM fda_recalls
-WHERE YEAR(recall_date) IN (2024, 2025)
-GROUP BY
-YEAR(recall_date),
-DATENAME(MONTH, recall_date),
-MONTH(recall_date)
-ORDER BY recall_year, month_number;
-
-           </pre>
-
-</details>
-    <ul class="spaced-list">
-
-    <li>
-        Recalls showed clear seasonality across 2024–2025, averaging approximately 130 recalls per month (3,115 total).
-    </li>
-
-    <br>
-
-    <li>
-        Activity peaked in June 2025 (303 recalls) and reached a low in November 2025 (63 recalls).
-    </li>
-
-    <br>
-
-    <li>
-        While 2024 remained relatively flat (147 to 145 recalls), 2025 trended upward from January to December (99 to 137, +38), indicating stronger momentum during the second half of the year.
-    </li>
-
-</ul>
-
-<br>
-
-<h3 class="project-subheading">
-    Takeaway
-</h3>
-
-<p>
-    Recalls followed a seasonal cycle, with 2025 showing a more pronounced late-year acceleration.
-</p>
-
-
-        </section>
-
+      
         <!-- RECALL REASONS -->
 
        <img
