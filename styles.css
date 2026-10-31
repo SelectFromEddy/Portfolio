@@ -1546,9 +1546,12 @@ body {
 
     text-align: left;
 }
-/* ==================================
-   FDA PAGE CENTERING FIX
-================================== */
+/* FDA PAGE CENTERING */
+
+.project-container {
+
+    text-align: center;
+}
 
 .project-section {
 
@@ -1560,9 +1563,19 @@ body {
     text-align: center;
 }
 
-.project-section ul {
+.project-section h2 {
 
-    width: 75%;
+    text-align: center;
+}
+
+.project-subheading {
+
+    text-align: center;
+}
+
+.spaced-list {
+
+    width: 80%;
 
     margin: 0 auto;
 
@@ -1610,19 +1623,20 @@ body {
     width: 75%;
 
     margin: 0 auto;
+
+    text-align: center;
+}
+
+.chart-analysis ul {
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    text-align: left;
 }
 
 .chart-analysis p {
-
-    text-align: center;
-}
-
-.chart-analysis .project-subheading {
-
-    text-align: center;
-}
-
-.project-subheading {
 
     text-align: center;
 }
@@ -1639,19 +1653,5 @@ body {
 
     flex-wrap: wrap;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
