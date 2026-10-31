@@ -551,28 +551,25 @@ ORDER BY
 
     <!-- MONTHLY RECALL TRENDS -->
 
-<section class="project-section">
+<div class="chart-container">
 
+    <img
+        src="assets/monthlyrecalls.png"
+        alt="Monthly Recall Trends"
+        class="project-image-medium clickable-image"
+        onclick="openLightbox(this.src)">
 
-    <div class="chart-container">
+</div>
 
-        <img
-            src="assets/monthlyrecalls.png"
-            alt="Monthly Recall Trends"
-            class="project-image-medium clickable-image"
-            onclick="openLightbox(this.src)">
+<br><br>
 
-    </div>
+<details class="sql-dropdown">
 
-    <br><br>
+    <summary>
+        Execute Query
+    </summary>
 
-    <details class="sql-dropdown">
-
-        <summary>
-            Execute Query
-        </summary>
-
-        <pre class="sql-code">
+    <pre class="sql-code">
 -- This query finds total recalls per month
 -- in 2024 and 2025
 
@@ -594,43 +591,39 @@ GROUP BY
 ORDER BY
     recall_year,
     month_number;
-        </pre>
+    </pre>
 
-    </details>
+</details>
 
-    <br><br>
+<ul class="spaced-list">
 
-    <ul class="spaced-list">
-
-        <li>
-            Recalls showed clear seasonality across 2024–2025, averaging approximately 130 recalls per month (3,115 total).
-        </li>
-
-        <br>
-
-        <li>
-            Activity peaked in June 2025 (303 recalls) and reached a low in November 2025 (63 recalls).
-        </li>
-
-        <br>
-
-        <li>
-            While 2024 remained relatively flat (147 to 145 recalls), 2025 trended upward from January to December (99 to 137, +38), indicating stronger momentum during the second half of the year.
-        </li>
-
-    </ul>
+    <li>
+        Recalls showed clear seasonality across 2024–2025, averaging approximately 130 recalls per month (3,115 total).
+    </li>
 
     <br>
 
-    <h3 class="project-subheading">
-        Takeaway
-    </h3>
+    <li>
+        Activity peaked in June 2025 (303 recalls) and reached a low in November 2025 (63 recalls).
+    </li>
 
-    <p>
-        Recalls followed a seasonal cycle, with 2025 showing a more pronounced late-year acceleration.
-    </p>
+    <br>
 
-</section>
+    <li>
+        While 2024 remained relatively flat (147 to 145 recalls), 2025 trended upward from January to December (99 to 137, +38), indicating stronger momentum during the second half of the year.
+    </li>
+
+</ul>
+
+<br>
+
+<h3 class="project-subheading">
+    Takeaway
+</h3>
+
+<p>
+    Recalls followed a seasonal cycle, with 2025 showing a more pronounced late-year acceleration.
+</p>
       
         <!-- RECALL REASONS -->
 
