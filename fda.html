@@ -627,21 +627,46 @@ ORDER BY recall_year, month_number;
 
         <!-- RECALL REASONS -->
 
-        <section class="project-section">
+       <img
+        src="assets/recallreasons.png"
+        alt="Recall reasons"
+        class="project-image-medium clickable-image"
+        onclick="openLightbox(this.src)">
 
-            <h2>Recall Reasons Analysis</h2>
-
-            <details class="sql-dropdown">
+</div>
+<details class="sql-dropdown">
 
                 <summary>
                     Execute Query
                 </summary>
+                <pre class="sql-code">
 
+             --This query gives the top ten recall reasons using windows functions and CTE's
+
+WITH recall_reasons as (
+SELECT
+		YEAR(recall_date) as recall_year,
+		recall_reason,
+		COUNT(*) AS total_recalls,
+		RANK() OVER(PARTITION BY YEAR(recall_date) ORDER BY Count(*) DESC ) AS reason_rank
+FROM fda_recalls
+WHERE YEAR(recall_date) IN (2024,2025)
+GROUP BY YEAR(recall_date), recall_reason
+)
+SELECT
+		recall_year,
+		recall_reason,
+		total_recalls
+FROM recall_reasons
+WHERE reason_rank <=5
+ORDER BY recall_year, recall_reason DESC;
+
+           </pre>
+
+</details>
                 <!-- PASTE SQL QUERY -->
 
-            </details>
-
-        </section>
+        
 
         <!-- STATE ANALYSIS -->
 
