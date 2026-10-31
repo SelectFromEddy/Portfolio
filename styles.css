@@ -1529,6 +1529,23 @@ body {
 
     margin-bottom: 25px;
 }
+.chart-container {
+
+    width: 75%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.chart-analysis {
+
+    width: 75%;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
 
 
 
