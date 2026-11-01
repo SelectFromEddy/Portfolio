@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Campaign Performance Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <span class="sql-blue">SELECT</span>
+        <span class="sql-blue">FROM</span>
+        <span class="sql-green">eddy</span>
+        <span class="sql-white">;</span>
+    </a>
+</nav>
+
+<section class="project-container">
+
+    <div class="project-hero">
+        <h1>Marketing Campaign Performance Analysis</h1>
+        <p class="project-subtitle">PostgreSQL • SQL • Power BI • Marketing Analytics</p>
+    </div>
+
+    <section class="project-section">
+        <h2>Executive Summary</h2>
+        <p>This project analyzes digital advertising campaign performance using PostgreSQL, SQL, and Power BI to evaluate marketing profitability, customer acquisition efficiency, and return on advertising spend.</p>
+        <p>The objective was to identify which advertising platforms and campaign objectives generated the strongest business results and where future advertising budget should be allocated. Through data validation, SQL analysis, KPI development, dashboard design, and business storytelling, raw campaign-level data was transformed into actionable recommendations for marketing leadership.</p>
+    </section>
+
+    <section class="project-section">
+        <h2>Dashboard Preview</h2>
+        <div class="chart-container">
+            <img src="assets/marketing-dashboard.png"
+                 alt="Marketing Campaign Performance Power BI Dashboard"
+                 class="project-image-medium clickable-image"
+                 onclick="openLightbox(this.src)">
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Business Questions</h2>
+        <p>This project focused on answering five key business questions:</p>
+        <ul class="spaced-list">
+            <li>Is advertising investment generating profitable business outcomes?</li>
+            <li>Which advertising platforms generate the greatest business value?</li>
+            <li>Which campaign objectives generate the strongest return on investment?</li>
+            <li>Which advertising platforms acquire customers most efficiently?</li>
+            <li>Which platforms generate the strongest profit efficiency per advertising dollar spent?</li>
+        </ul>
+    </section>
+
+    <section class="project-section">
+        <h2>Key Findings</h2>
+
+        <h3 class="project-subheading">Marketing Performance</h3>
+        <ul class="spaced-list">
+            <li>Generated approximately <strong>$240.7M</strong> in profit.</li>
+            <li>Total advertising spend was approximately <strong>$43.46M</strong>.</li>
+            <li>Achieved an average <strong>ROAS of 7.52x</strong>.</li>
+            <li>Generated over <strong>655K conversions</strong>.</li>
+            <li>Produced approximately <strong>$5.54 in profit for every $1 invested</strong> in advertising.</li>
+        </ul>
+
+        <h3 class="project-subheading">Insight</h3>
+        <p>Marketing investments generated strong business returns while maintaining reasonable acquisition costs, indicating effective overall advertising performance.</p>
+    </section>
+
+    <section class="project-section">
+        <h3 class="project-subheading">Platform Performance</h3>
+        <ul class="spaced-list">
+            <li>Google Ads generated approximately <strong>$80M</strong> in profit.</li>
+            <li>Google Ads contributed approximately <strong>33%</strong> of total campaign profit.</li>
+            <li>Google Ads and Facebook together generated nearly <strong>60%</strong> of total campaign profit.</li>
+        </ul>
+
+        <h3 class="project-subheading">Insight</h3>
+        <p>A significant portion of profitability was concentrated in Google Ads and Facebook, making them critical drivers of marketing performance.</p>
+    </section>
+
+    <section class="project-section">
+        <h3 class="project-subheading">Campaign Objective Performance</h3>
+        <ul class="spaced-list">
+            <li>Conversion campaigns achieved the highest average ROAS at <strong>9.20x</strong>.</li>
+            <li>Conversion campaigns generated approximately <strong>2.3x greater return on ad spend</strong> than Brand Awareness campaigns.</li>
+        </ul>
+
+        <h3 class="project-subheading">Insight</h3>
+        <p>Conversion-focused campaigns consistently generated the strongest return on marketing investment.</p>
+    </section>
+
+    <section class="project-section">
+        <h3 class="project-subheading">Customer Acquisition Efficiency</h3>
+        <ul class="spaced-list">
+            <li>Facebook achieved the lowest CPA at approximately <strong>$118 per acquisition</strong>.</li>
+            <li>LinkedIn recorded the highest CPA at approximately <strong>$379 per acquisition</strong>.</li>
+        </ul>
+
+        <h3 class="project-subheading">Insight</h3>
+        <p>Facebook demonstrated the strongest balance between customer acquisition efficiency and profitability.</p>
+    </section>
+
+    <section class="project-section">
+        <h3 class="project-subheading">Profit Efficiency Analysis</h3>
+        <ul class="spaced-list">
+            <li>TikTok generated approximately <strong>$10.18 in profit per dollar spent</strong>.</li>
+            <li>Facebook generated approximately <strong>$9.39 in profit per dollar spent</strong>.</li>
+            <li>Google Ads generated the most profit overall but did not generate the highest profit efficiency.</li>
+        </ul>
+
+        <h3 class="project-subheading">Insight</h3>
+        <p>The highest-profit platform is not always the most efficient platform. Evaluating both scale and efficiency provides a more complete picture of marketing performance.</p>
+    </section>
+
+    <section class="project-section">
+        <h2>Technical Process</h2>
+
+        <h3 class="project-subheading">Data Validation</h3>
+        <p><strong>Process</strong></p>
+        <ul class="spaced-list">
+            <li>Validated row counts</li>
+            <li>Reviewed categories and dimensions</li>
+            <li>Checked for missing values</li>
+            <li>Reviewed KPI calculations</li>
+            <li>Performed duplicate record checks</li>
+        </ul>
+    </section>
+
+    <section class="project-section">
+        <h3 class="project-subheading">SQL Analysis</h3>
+        <p><strong>Process</strong></p>
+        <p>Developed SQL queries to evaluate:</p>
+        <ul class="spaced-list">
+            <li>Marketing profitability</li>
+            <li>Platform performance</li>
+            <li>Campaign objective effectiveness</li>
+            <li>Customer acquisition efficiency</li>
+            <li>Profit efficiency</li>
+            <li>Budget allocation opportunities</li>
+        </ul>
+    </section>
+
+    <section class="project-section">
+        <h3 class="project-subheading">Dashboard Development</h3>
+
+        <p><strong>KPIs Developed</strong></p>
+        <ul class="spaced-list">
+            <li>Total Ad Spend</li>
+            <li>Total Profit</li>
+            <li>Average ROAS</li>
+            <li>Average CPA</li>
+        </ul>
+
+        <p><strong>Visualizations</strong></p>
+        <ul class="spaced-list">
+            <li>Profit by Platform</li>
+            <li>Average ROAS by Campaign Objective</li>
+            <li>Average CPA by Platform</li>
+        </ul>
+    </section>
+
+    <section class="project-section">
+        <h2>Recommendations</h2>
+
+        <h3 class="project-subheading">Google Ads</h3>
+        <p>Continue prioritizing Google Ads because it generated the highest overall profit and remains the largest contributor to campaign profitability.</p>
+
+        <h3 class="project-subheading">Conversion Campaigns</h3>
+        <p>Increase investment in Conversion-focused campaigns due to their superior ROAS performance.</p>
+
+        <h3 class="project-subheading">Facebook</h3>
+        <p>Continue leveraging Facebook as an efficient customer acquisition channel because of its low CPA and strong profitability.</p>
+
+        <h3 class="project-subheading">TikTok</h3>
+        <p>Explore opportunities to scale TikTok campaigns strategically due to its industry-leading profit efficiency.</p>
+
+        <h3 class="project-subheading">Optimization Opportunities</h3>
+        <p>Review lower-performing platforms and campaign objectives before allocating additional advertising budget.</p>
+    </section>
+
+    <section class="project-section">
+        <h2>Tools Used</h2>
+
+        <h3 class="project-subheading">Database</h3>
+        <ul class="spaced-list">
+            <li>PostgreSQL</li>
+        </ul>
+
+        <h3 class="project-subheading">Querying &amp; Analysis</h3>
+        <ul class="spaced-list">
+            <li>SQL</li>
+        </ul>
+
+        <h3 class="project-subheading">Visualization</h3>
+        <ul class="spaced-list">
+            <li>Power BI</li>
+        </ul>
+    </section>
+
+    <section class="project-section">
+        <h2>Skills Demonstrated</h2>
+
+        <h3 class="project-subheading">Analytics</h3>
+        <ul class="spaced-list">
+            <li>Data Validation</li>
+            <li>Data Cleaning</li>
+            <li>Data Auditing</li>
+            <li>KPI Development</li>
+            <li>Marketing Analytics</li>
+            <li>ROI Analysis</li>
+            <li>Budget Allocation Analysis</li>
+        </ul>
+
+        <h3 class="project-subheading">Business Intelligence</h3>
+        <ul class="spaced-list">
+            <li>Dashboard Development</li>
+            <li>Executive Reporting</li>
+            <li>Data Storytelling</li>
+            <li>Business Recommendations</li>
+        </ul>
+
+        <h3 class="project-subheading">Technical</h3>
+        <ul class="spaced-list">
+            <li>PostgreSQL</li>
+            <li>SQL</li>
+            <li>Power BI</li>
+        </ul>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Workflow</h2>
+
+        <div class="workflow">
+            <p>Business Question</p>
+            <p class="workflow-arrow">↓</p>
+            <p>Data Audit &amp; Validation</p>
+            <p class="workflow-arrow">↓</p>
+            <p>SQL Analysis</p>
+            <p class="workflow-arrow">↓</p>
+            <p>KPI Development</p>
+            <p class="workflow-arrow">↓</p>
+            <p>Dashboard Design</p>
+            <p class="workflow-arrow">↓</p>
+            <p>Insight Generation</p>
+            <p class="workflow-arrow">↓</p>
+            <p>Business Recommendations</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Final Takeaway</h2>
+        <p>This project demonstrates how raw advertising campaign data can be transformed into business recommendations through data validation, SQL analysis, KPI development, dashboard design, and executive storytelling.</p>
+        <p>The analysis identified clear opportunities to improve future marketing performance by prioritizing high-profit platforms, high-ROAS campaign objectives, efficient acquisition channels, and high-efficiency advertising investments.</p>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Assets</h2>
+
+        <h3 class="project-subheading">GitHub Repository</h3>
+        <p>Add GitHub repository link here.</p>
+
+        <h3 class="project-subheading">Dashboard</h3>
+        <div class="chart-container">
+            <img src="assets/marketing-dashboard-1.png"
+                 alt="Marketing Campaign Performance Dashboard"
+                 class="project-image-medium clickable-image"
+                 onclick="openLightbox(this.src)">
+        </div>
+
+        <h3 class="project-subheading">SQL Files</h3>
+        <ul class="spaced-list">
+            <li>Data_Audit.sql</li>
+            <li>Business_Analysis.sql</li>
+        </ul>
+
+        <h3 class="project-subheading">LinkedIn</h3>
+        <p>Add LinkedIn post link here.</p>
+    </section>
+
+</section>
+
+</body>
+</html>
