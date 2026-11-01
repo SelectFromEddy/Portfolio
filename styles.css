@@ -1546,3 +1546,66 @@ body {
 
     text-align: left;
 }
+.project-footer-nav {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 20px;
+
+    margin: 80px auto 40px;
+}
+
+.back-to-top-btn {
+
+    background: transparent;
+
+    border: 1px solid #39c5ff;
+
+    color: #39c5ff;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+
+    background: #39c5ff;
+
+    color: #000;
+}
+
+.footer-home-link {
+
+    text-decoration: none;
+
+    font-size: 1.75rem;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    display: inline-block;
+}
+
+.footer-home-link:hover {
+
+    opacity: 0.8;
+}
+
