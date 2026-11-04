@@ -1606,3 +1606,16 @@ body {
 
     color: #000;
 }
+hr {
+
+    border: none;
+
+    height: 1px;
+
+    background: rgba(255,255,255,.15);
+
+    margin: 50px auto;
+
+    width: 100%;
+}
+
